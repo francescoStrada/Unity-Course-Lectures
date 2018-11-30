@@ -31,28 +31,34 @@ public class ThirdPersonCharacterMovement : MonoBehaviour
         _inputSpeed = Mathf.Clamp(_inputVector.magnitude, 0f, 1f);
 
         //Compute direction According to Camera Orientation
-        _targetDirection = _cameraT.TransformDirection(_inputVector);
+        _targetDirection = _cameraT.TransformDirection(_inputVector).normalized;
         _targetDirection.y = 0f;
 
-        if (_isRigidBodyMovement)
+        if (_isRigidBodyMovement || _inputSpeed <= 0f)
             return;
 
         //Update Transform if no rigidbody attached
         Vector3 newDir = Vector3.RotateTowards(transform.forward, _targetDirection, _rotationSpeed * Time.deltaTime, 0f);
-        transform.rotation = Quaternion.LookRotation(newDir);
 
+        Debug.DrawRay(transform.position + transform.up * 3f, _targetDirection * 5f, Color.red);
+        Debug.DrawRay(transform.position + transform.up * 3f, newDir * 5f, Color.blue);
+
+        
+        transform.rotation = Quaternion.LookRotation(newDir);
         transform.Translate(transform.forward * _inputSpeed * _speed * Time.deltaTime, Space.World);
     }
 
     private void FixedUpdate()
     {
         //if Rigidbody attached update rigidbody position
-        if (!_isRigidBodyMovement)
+        if (!_isRigidBodyMovement || _inputSpeed <= 0f)
             return;
-        Debug.Log("Rigidbody movement");
-        Vector3 newDir = Vector3.RotateTowards(transform.forward, _targetDirection, _rotationSpeed * Time.fixedDeltaTime, 0f);
-        _rigidbody.MoveRotation(Quaternion.LookRotation(newDir));
 
+        Vector3 newDir = Vector3.RotateTowards(transform.forward, _targetDirection, _rotationSpeed * Time.fixedDeltaTime, 0f);
+        Debug.DrawRay(transform.position + transform.up * 3f, _targetDirection * 5f, Color.red);
+        Debug.DrawRay(transform.position + transform.up * 3f, newDir * 5f, Color.blue);
+
+        _rigidbody.MoveRotation(Quaternion.LookRotation(newDir));
         _rigidbody.MovePosition(_rigidbody.position + transform.forward * _inputSpeed * _speed * Time.fixedDeltaTime);
     }
 }
