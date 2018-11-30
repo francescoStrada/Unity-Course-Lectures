@@ -130,7 +130,7 @@ public class FPSInteractionManager : MonoBehaviour
         if (_grabbedObject == null)
             return;
 
-        _grabbedObject.transform.parent = null;
+        _grabbedObject.transform.parent = _grabbedObject.OriginalParent;
         _grabbedObject.Drop();
 
         _target.enabled = true;

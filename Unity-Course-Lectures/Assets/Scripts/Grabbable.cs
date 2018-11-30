@@ -8,12 +8,19 @@ public class Grabbable : MonoBehaviour
 {
     private Rigidbody _rigidbody;
     private Collider _collider;
-    
+    private Transform _originalParent;
+
+    public Transform OriginalParent
+    {
+        get { return _originalParent; }
+        protected set { _originalParent = value; }
+    }    
     // Use this for initialization
     void Start ()
     {
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
+        _originalParent = transform.parent;
 		
 	}
 	
