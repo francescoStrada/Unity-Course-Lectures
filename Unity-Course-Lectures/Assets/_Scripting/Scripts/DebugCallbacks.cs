@@ -49,6 +49,11 @@ public class DebugCallbacks : MonoBehaviour {
             Debug.Log("LATE UPDATE");
     }
 
+    void OnDisable()
+    {
+        Debug.Log("ON DISABLE");
+    }
+
     void OnDestroy()
     {
         Debug.Log("DESTROY");

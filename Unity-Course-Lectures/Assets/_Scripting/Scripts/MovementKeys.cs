@@ -13,17 +13,21 @@ public class MovementKeys : MonoBehaviour {
 	
 	void Update ()
     {
+        Vector3 movementVector = Vector3.zero;
+
         if (Input.GetKey(KeyCode.W))
-            transform.Translate(transform.forward * movSpeed * Time.deltaTime);
+            movementVector += transform.forward;
 
         if (Input.GetKey(KeyCode.S))
-            transform.Translate(-transform.forward * movSpeed * Time.deltaTime);
+            movementVector += -transform.forward;
 
         if (Input.GetKey(KeyCode.A))
-            transform.Translate(-transform.right * movSpeed * Time.deltaTime);
+            movementVector += -transform.right;
 
         if (Input.GetKey(KeyCode.D))
-            transform.Translate(transform.right * movSpeed * Time.deltaTime);
+            movementVector += transform.right;
+
+        transform.Translate(movementVector.normalized * movSpeed * Time.deltaTime, Space.World);
 
     }
 }

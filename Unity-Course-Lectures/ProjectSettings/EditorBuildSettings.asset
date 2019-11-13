@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MultiScene/MultiSceneShared.unity
+    path: Assets/[Depracated]/Scenes/MultiScene/MultiSceneShared.unity
     guid: 42b87fcb2ba82814e9b5c9202e65efa5
   - enabled: 1
-    path: Assets/Scenes/MultiScene/SceneA.unity
+    path: Assets/[Depracated]/Scenes/MultiScene/SceneA.unity
     guid: 1b2082e85151d934d99aa3f48a12fd2b
   - enabled: 1
-    path: Assets/Scenes/MultiScene/SceneB.unity
+    path: Assets/[Depracated]/Scenes/MultiScene/SceneB.unity
     guid: 75bfa73e402001d4f8b229dc87e8c7d3
   - enabled: 1
-    path: Assets/Scenes/MultiScene/SceneC.unity
+    path: Assets/[Depracated]/Scenes/MultiScene/SceneC.unity
     guid: de35dcb42a1ebde4390e62c5f9fc76aa
   m_configObjects: {}
