@@ -20,13 +20,15 @@ public class RigidbodyReposition : MonoBehaviour
         if (rigidbody != null)
             isKinematicOriginalState = rigidbody.isKinematic;
 
-        InvokeRepeating("RepositionRigibody", 0f, simulationTime);
+        if(simulationTime > 1f)
+            InvokeRepeating("RepositionRigibody", 0f, simulationTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+            RepositionRigibody();
     }
 
     private void RepositionRigibody()
