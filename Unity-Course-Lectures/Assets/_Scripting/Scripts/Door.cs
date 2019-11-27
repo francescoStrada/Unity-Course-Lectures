@@ -52,6 +52,12 @@ public class Door : MonoBehaviour
         _isOpen = !_isOpen;
     }
 
+    public void OpenAndClose(float rotation)
+    {
+        OpenDoor(rotation);
+        Invoke("CloseDoor", _openingTime + 0.5f);
+    }
+
 
 
 
