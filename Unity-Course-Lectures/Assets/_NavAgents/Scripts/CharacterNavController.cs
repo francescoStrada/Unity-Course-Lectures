@@ -32,9 +32,9 @@ public class CharacterNavController : MonoBehaviour
                 _navMeshAgent.SetDestination(hit.point);
 
                 _targetFeedback.transform.position = new Vector3(hit.point.x, 
-                                                                _targetFeedback.transform.position.y, 
+                                                                hit.point.y + (transform.up * 0.02f).y, 
                                                                 hit.point.z);
-                
+                _targetFeedback.transform.forward = hit.normal;
             }
         }
 
@@ -50,8 +50,6 @@ public class CharacterNavController : MonoBehaviour
                    return true;
 
         return false;    
-        
-
     }
 
 }

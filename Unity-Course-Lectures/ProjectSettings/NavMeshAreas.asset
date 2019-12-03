@@ -75,7 +75,7 @@ NavMeshProjectSettings:
     agentTypeID: 0
     agentRadius: 0.4
     agentHeight: 2
-    agentSlope: 60
+    agentSlope: 40
     agentClimb: 0.6
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -90,9 +90,9 @@ NavMeshProjectSettings:
   - serializedVersion: 2
     agentTypeID: -1372625422
     agentRadius: 2
-    agentHeight: 4
+    agentHeight: 5
     agentSlope: 14
-    agentClimb: 0.4
+    agentClimb: 0.2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -105,4 +105,4 @@ NavMeshProjectSettings:
       m_Flags: 0
   m_SettingNames:
   - Humanoid
-  - Enemy
+  - BigHumanoid
