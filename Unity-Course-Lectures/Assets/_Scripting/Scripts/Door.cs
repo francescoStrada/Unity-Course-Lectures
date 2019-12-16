@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Door : MonoBehaviour
 {
+    public Action DoorOpened;
+    public Action DoorClosed;
+    public Action<bool> DoorRotating;
+
     [SerializeField] private GameObject _doorHindge;
     [SerializeField] private float _openingTime = 1f;
     [SerializeField] private float _closingTime = 0.5f;
@@ -38,6 +43,9 @@ public class Door : MonoBehaviour
     {
         _isRotating = true;
 
+        if (DoorRotating != null)
+            DoorRotating.Invoke(!_isOpen);
+
         float animationTimer = 0;
         Quaternion startRotation = _doorHindge.transform.localRotation;
          
@@ -50,6 +58,11 @@ public class Door : MonoBehaviour
 
         _isRotating = false;
         _isOpen = !_isOpen;
+
+        if (_isOpen && DoorOpened != null)
+            DoorOpened.Invoke();
+        if (!_isOpen && DoorClosed != null)
+            DoorClosed.Invoke();
     }
 
     public void OpenAndClose(float rotation)
