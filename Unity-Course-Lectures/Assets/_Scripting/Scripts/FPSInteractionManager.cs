@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityStandardAssets.Utility;
 
 public class FPSInteractionManager : MonoBehaviour
 {
