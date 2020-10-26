@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class DebugCallbacks : MonoBehaviour {
 
-    public bool logUpdate;
-    public bool logStrings;
+    public bool LogAwakeMessages;
 
-    public string warningMessage;
-    public string errorMessage;
+    public string WarningMessage;
+    public string ErrorMessage;
 
     void Awake()
     {
@@ -24,29 +23,26 @@ public class DebugCallbacks : MonoBehaviour {
     {
         Debug.Log("START");
 
-        if (logStrings)
+        if (LogAwakeMessages)
         {
-            Debug.LogWarning(warningMessage);
-            Debug.LogError(errorMessage);
+            Debug.LogWarning(WarningMessage);
+            Debug.LogError(ErrorMessage);
         }
 	}
 
     void FixedUpdate()
-    {
-        if (logUpdate)
-            Debug.Log("FIXED UPDATE");
+    { 
+        Debug.Log("FIXED UPDATE");
     }
 
     void Update ()
     {
-        if (logUpdate)
-            Debug.Log("UPDATE");
+        Debug.Log("UPDATE");
 	}
 
     void LateUpdate()
     {
-        if(logUpdate)
-            Debug.Log("LATE UPDATE");
+        Debug.Log("LATE UPDATE");
     }
 
     void OnDisable()

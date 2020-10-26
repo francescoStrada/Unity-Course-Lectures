@@ -3,9 +3,9 @@ using System.Collections;
 
 public class DeltaTimeMovement : MonoBehaviour
 {
-    public bool useDeltaTime = true;
+    public bool UseDeltaTime = true;
 
-    public float speed = 3f;
+    public float Speed = 3f;
     // Use this for initialization
     void Start()
     {
@@ -15,9 +15,9 @@ public class DeltaTimeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 movementVector = transform.forward * speed;
+        Vector3 movementVector = transform.forward * Speed;
 
-        if (useDeltaTime)
+        if (UseDeltaTime)
             transform.Translate(movementVector * Time.deltaTime);
 
         else
