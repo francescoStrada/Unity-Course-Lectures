@@ -9,10 +9,6 @@ public class SimpleThirdPersonController_Empty : MonoBehaviour
     // A Rotation Speed
     // A Movement Speed
     
-    void Start()
-    {
-
-    }
 
     void Update()
     {
