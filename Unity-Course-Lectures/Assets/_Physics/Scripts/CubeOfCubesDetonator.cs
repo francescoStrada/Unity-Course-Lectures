@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CubeOfCubesDetonator : MonoBehaviour
 {
-    public float detonationForce = 5f;
-    public float radius;
+    public float DetonationForce = 5f;
+    public float Radius;
 
-    private Rigidbody[] rigidbodies;
+    private Rigidbody[] _rigidbodies;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
-        rigidbodies = GetComponentsInChildren<Rigidbody>();
+        _rigidbodies = GetComponentsInChildren<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,10 +24,10 @@ public class CubeOfCubesDetonator : MonoBehaviour
 
     private void Detonate()
     {
-        for (int i = 0; i < rigidbodies.Length; i++)
+        for (int i = 0; i < _rigidbodies.Length; i++)
         {
-            rigidbodies[i].isKinematic = false;
-            rigidbodies[i].AddExplosionForce(detonationForce, transform.position, radius);
+            _rigidbodies[i].isKinematic = false;
+            _rigidbodies[i].AddExplosionForce(DetonationForce, transform.position, Radius);
         }
     }
 

@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -127,11 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7769068752123609119, guid: c036fc6884351e44b85f1b5391449bd6,
-        type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_4
-      objectReference: {fileID: 0}
     - target: {fileID: 7769068752123609114, guid: c036fc6884351e44b85f1b5391449bd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +188,11 @@ PrefabInstance:
       propertyPath: radius
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7769068752123609119, guid: c036fc6884351e44b85f1b5391449bd6,
+        type: 3}
+      propertyPath: m_Name
+      value: CubeOfCubes_4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c036fc6884351e44b85f1b5391449bd6, type: 3}
 --- !u!1001 &30064515
@@ -205,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CubeOfCubes_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874663177296939284, guid: 259f808a42844db4282a28061086a041,
+        type: 3}
+      propertyPath: radius
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4874663177296939287, guid: 259f808a42844db4282a28061086a041,
         type: 3}
@@ -261,11 +267,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4874663177296939284, guid: 259f808a42844db4282a28061086a041,
-        type: 3}
-      propertyPath: radius
-      value: 1.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 259f808a42844db4282a28061086a041, type: 3}
 --- !u!1 &682351007
@@ -315,6 +316,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -349,9 +351,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &682351011
 MeshFilter:
@@ -368,11 +370,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3616112512189605470, guid: ba7cf15a355dfd6468c7e28478a13d49,
-        type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_5
-      objectReference: {fileID: 0}
     - target: {fileID: 3616112512189605467, guid: ba7cf15a355dfd6468c7e28478a13d49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -433,6 +430,11 @@ PrefabInstance:
       propertyPath: radius
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3616112512189605470, guid: ba7cf15a355dfd6468c7e28478a13d49,
+        type: 3}
+      propertyPath: m_Name
+      value: CubeOfCubes_5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7cf15a355dfd6468c7e28478a13d49, type: 3}
 --- !u!1001 &1099843654
@@ -442,10 +444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5670011192243778742, guid: c164196c7f4d1524a9a1cf73efbb3132,
+    - target: {fileID: 5670011192243778737, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_6 (1)
+      propertyPath: radius
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5670011192243778739, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
@@ -502,10 +504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5670011192243778737, guid: c164196c7f4d1524a9a1cf73efbb3132,
+    - target: {fileID: 5670011192243778742, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
-      propertyPath: radius
-      value: 1.2
+      propertyPath: m_Name
+      value: CubeOfCubes_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c164196c7f4d1524a9a1cf73efbb3132, type: 3}
@@ -549,11 +551,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3616112512189605470, guid: ba7cf15a355dfd6468c7e28478a13d49,
-        type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_5 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3616112512189605467, guid: ba7cf15a355dfd6468c7e28478a13d49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -613,6 +610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616112512189605470, guid: ba7cf15a355dfd6468c7e28478a13d49,
+        type: 3}
+      propertyPath: m_Name
+      value: CubeOfCubes_5 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7cf15a355dfd6468c7e28478a13d49, type: 3}
@@ -747,8 +749,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335205700}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1.28
   m_Range: 10
@@ -806,11 +809,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7769068752123609119, guid: c036fc6884351e44b85f1b5391449bd6,
-        type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_4 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7769068752123609114, guid: c036fc6884351e44b85f1b5391449bd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,6 +869,11 @@ PrefabInstance:
       propertyPath: radius
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7769068752123609119, guid: c036fc6884351e44b85f1b5391449bd6,
+        type: 3}
+      propertyPath: m_Name
+      value: CubeOfCubes_4 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c036fc6884351e44b85f1b5391449bd6, type: 3}
 --- !u!1001 &1859815189
@@ -880,10 +883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5670011192243778742, guid: c164196c7f4d1524a9a1cf73efbb3132,
+    - target: {fileID: 5670011192243778737, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
-      propertyPath: m_Name
-      value: CubeOfCubes_6
+      propertyPath: radius
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5670011192243778739, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
@@ -940,10 +943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5670011192243778737, guid: c164196c7f4d1524a9a1cf73efbb3132,
+    - target: {fileID: 5670011192243778742, guid: c164196c7f4d1524a9a1cf73efbb3132,
         type: 3}
-      propertyPath: radius
-      value: 1.2
+      propertyPath: m_Name
+      value: CubeOfCubes_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c164196c7f4d1524a9a1cf73efbb3132, type: 3}

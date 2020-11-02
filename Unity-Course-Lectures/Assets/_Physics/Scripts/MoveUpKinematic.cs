@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class MoveUpKinematic : MonoBehaviour
 {
-    private Vector3 originalPosition;
-    private Rigidbody rigidbody;
+    [SerializeField] private bool _toggleKinematic;
+    [SerializeField] private float _speed;
+
+    private Vector3 _originalPosition;
+    private Rigidbody _rigidbody;
     // Start is called before the first frame update
     void Start()
     {
-        originalPosition = transform.position;
-        rigidbody = GetComponent<Rigidbody>();
+        _originalPosition = transform.position;
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -18,14 +21,15 @@ public class MoveUpKinematic : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            if (rigidbody != null)
-                rigidbody.isKinematic = true;
+            if (_rigidbody != null && _toggleKinematic)
+                _rigidbody.isKinematic = true;
 
-            transform.position = Vector3.MoveTowards(transform.position, originalPosition, 2f * Time.deltaTime);
+            
+            transform.position = Vector3.MoveTowards(transform.position, _originalPosition, _speed * Time.deltaTime);
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
-            if (rigidbody != null)
-                rigidbody.isKinematic = false;
+            if (_rigidbody != null)
+                _rigidbody.isKinematic = false;
     }
 }
