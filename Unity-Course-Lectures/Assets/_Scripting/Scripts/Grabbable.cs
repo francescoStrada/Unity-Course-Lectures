@@ -15,17 +15,12 @@ public class Grabbable : MonoBehaviour
         get { return _originalParent; }
         protected set { _originalParent = value; }
     }    
-    // Use this for initialization
+   
     void Start ()
     {
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
         _originalParent = transform.parent;
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
 		
 	}
 
