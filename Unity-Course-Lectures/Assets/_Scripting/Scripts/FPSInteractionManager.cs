@@ -31,7 +31,7 @@ public class FPSInteractionManager : MonoBehaviour
         if(_grabbedObject == null)
             CheckInteraction();
 
-        if (_grabbedObject != null && Input.GetMouseButtonDown(1))
+        if (_grabbedObject != null && Input.GetMouseButtonDown(0))
             Drop();
 
         UpdateUITarget();
@@ -42,7 +42,6 @@ public class FPSInteractionManager : MonoBehaviour
 
     private void CheckInteraction()
     {
-        
         Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
         RaycastHit hit;
 
@@ -55,6 +54,7 @@ public class FPSInteractionManager : MonoBehaviour
                 if(Input.GetMouseButtonDown(0))
                     _pointingInteractable.Interact(gameObject);
             }
+
             //Check if is grabbable
             _pointingGrabbable = hit.transform.GetComponent<Grabbable>();
             if (_grabbedObject == null && _pointingGrabbable)

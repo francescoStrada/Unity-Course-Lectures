@@ -2,37 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Collider))]
-public class Grabbable : MonoBehaviour
+public abstract class Grabbable : MonoBehaviour
 {
-    private Rigidbody _rigidbody;
-    private Collider _collider;
-    private Transform _originalParent;
+    protected Transform _originalParent;
 
     public Transform OriginalParent
     {
-        get { return _originalParent; }
-        protected set { _originalParent = value; }
+        get => _originalParent;
+        protected set => _originalParent = value;
     }
 
-    void Start ()
+    protected virtual void Start()
     {
-        _collider = GetComponent<Collider>();
-        _rigidbody = GetComponent<Rigidbody>();
         _originalParent = transform.parent;
-		
-	}
-
-    public void Grab(GameObject grabber)
-    {
-        _collider.enabled = false;
-        _rigidbody.isKinematic = true;
     }
 
-    public void Drop()
-    {
-        _collider.enabled = true;
-        _rigidbody.isKinematic = false;
-    }
+    public abstract void Grab(GameObject grabber);
+    public abstract void Drop();
 }

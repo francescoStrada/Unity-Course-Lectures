@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CollisionPushBack : MonoBehaviour
 {
+    [SerializeField] private float _repulseForce;
+
     private Vector3 _pushbackDir;
 
-    [SerializeField] private float _repulseForce;
+    
     void OnCollisionEnter(Collision collision)
     {
         Rigidbody rb = collision.rigidbody;
