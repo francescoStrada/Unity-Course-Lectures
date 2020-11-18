@@ -14,8 +14,8 @@ public class Grabbable : MonoBehaviour
     {
         get { return _originalParent; }
         protected set { _originalParent = value; }
-    }    
-   
+    }
+
     void Start ()
     {
         _collider = GetComponent<Collider>();

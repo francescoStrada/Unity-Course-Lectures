@@ -7,7 +7,6 @@ public class FPSInteractionManager : MonoBehaviour
     [SerializeField] private Transform _fpsCameraT;
     [SerializeField] private bool _debugRay;
     [SerializeField] private float _interactionDistance;
-    [SerializeField] private float _grabDistance;
 
     [SerializeField] private Image _target;
 
@@ -19,11 +18,6 @@ public class FPSInteractionManager : MonoBehaviour
 
     private Grabbable _grabbedObject = null;
 
-    public float InteractionDistance
-    {
-        get { return _interactionDistance; }
-        set { _interactionDistance = value; }
-    }
 
     void Start()
     {
@@ -52,7 +46,7 @@ public class FPSInteractionManager : MonoBehaviour
         Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, InteractionDistance))
+        if (Physics.Raycast(ray, out hit, _interactionDistance))
         {
             //Check if is interactable
             _pointingInteractable = hit.transform.GetComponent<Interactable>();
@@ -107,13 +101,12 @@ public class FPSInteractionManager : MonoBehaviour
     {
         _grabbedObject = grabbable;
         grabbable.transform.SetParent(_fpsCameraT);
-        Vector3 grabPosition = _fpsCameraT.position + transform.forward * _grabDistance;
 
         _target.enabled = false;
     }
 
     private void DebugRaycast()
     {
-        Debug.DrawRay(_rayOrigin, _fpsCameraT.forward * InteractionDistance, Color.red);
+        Debug.DrawRay(_rayOrigin, _fpsCameraT.forward * _interactionDistance, Color.red);
     }
 }
