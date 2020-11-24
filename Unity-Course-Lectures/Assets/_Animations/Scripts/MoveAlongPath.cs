@@ -17,15 +17,11 @@ public class MoveAlongPath : MonoBehaviour
             for (int i = 0; i < _waypointsRoot.childCount; i++)
                 pathPositions[i] = _waypointsRoot.GetChild(i).position;
 
-            transform.DOPath(pathPositions, _pathDuration, PathType.Linear, PathMode.Full3D, resolution: 20, Color.yellow)
-                .SetLookAt(0.01f)
-                .SetLoops(-1, LoopType.Yoyo);
-        } 
-    }
+            var tween = transform.DOPath(pathPositions, _pathDuration, PathType.Linear, PathMode.Full3D,
+                    resolution: 10, Color.yellow)
+                .SetLookAt(0.01f);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            tween.onComplete += () => { transform.DOJump(transform.position, 3, 3, 2f);}
+;        } 
     }
 }

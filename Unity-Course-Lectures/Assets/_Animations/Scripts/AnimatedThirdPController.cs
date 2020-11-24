@@ -55,19 +55,6 @@ public class AnimatedThirdPController : MonoBehaviour
     {
         _animator.SetFloat("speed", _inputSpeed);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _isJumping = true;
-            _animator.SetTrigger("jump");
-            
-        }
-        _animator.SetBool("dance", Input.GetKey(KeyCode.X));
-    }
-
-
-    private void Landed()
-    {
-        _isJumping = false;
-        Debug.Log("Landed");
+        _animator.SetBool("dead", Input.GetKey(KeyCode.Z));
     }
 }
