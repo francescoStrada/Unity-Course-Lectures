@@ -9,11 +9,14 @@ public class MoveCubeWayPoints : MonoBehaviour
     
     [Range(0.001f, 0.5f)][SerializeField] private float _nextWayPointWaitTime;
 
+    private Coroutine _coroutine = null;
+
+    private int _currentWaypointIndex = 0;
     // Use this for initialization
     void Start()
     {
         if (_useCoroutine)
-            StartCoroutine(MoveAlongWaipointsCoroutine());
+            _coroutine = StartCoroutine(MoveAlongWaipointsCoroutine());
     }
 
     
@@ -22,24 +25,36 @@ public class MoveCubeWayPoints : MonoBehaviour
     void Update()
     {
         if (_useCoroutine)
+        {
+            if (Input.GetKeyDown(KeyCode.S) && _coroutine == null)
+                _coroutine = StartCoroutine(MoveAlongWaipointsCoroutine());
+            
+            else if (Input.GetKeyDown(KeyCode.S) && _coroutine != null)
+            {
+                StopCoroutine(_coroutine);
+                _coroutine = null;
+            }
+
             return;
+        }
 
         for (int i = 0; i < wayPointsT.childCount; i++)
         {
             Vector3 wayPointPosition = wayPointsT.GetChild(i).position;
             transform.position = new Vector3(wayPointPosition.x, transform.position.y, wayPointPosition.z);
         }
+
     }
 
     private IEnumerator MoveAlongWaipointsCoroutine()
     {
         while (true)
         {
-            for (int i = 0; i < wayPointsT.childCount; i++)
+            for (int i = _currentWaypointIndex; i < wayPointsT.childCount; i++)
             {
                 Vector3 wayPointPosition = wayPointsT.GetChild(i).position;
                 transform.position = new Vector3(wayPointPosition.x, transform.position.y, wayPointPosition.z);
-       
+                _currentWaypointIndex = i;
                 yield return new WaitForSeconds(_nextWayPointWaitTime);
             }
         }
