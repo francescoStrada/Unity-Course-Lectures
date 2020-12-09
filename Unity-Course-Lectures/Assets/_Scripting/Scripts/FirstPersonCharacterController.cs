@@ -30,6 +30,11 @@ public class FirstPersonCharacterController : MonoBehaviour
 
     void Update()
     {
+        UpdateCursor();
+
+        if(Cursor.lockState == CursorLockMode.None)
+            return;
+
         //Ground Check
         _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
 
@@ -62,5 +67,14 @@ public class FirstPersonCharacterController : MonoBehaviour
         //FALLING
         _velocity.y += _gravity * Time.deltaTime;
         _characterController.Move(_velocity * Time.deltaTime);
+    }
+
+    private void UpdateCursor()
+    {
+        if (Cursor.lockState == CursorLockMode.None && Input.GetMouseButtonDown(1))
+            Cursor.lockState = CursorLockMode.Locked;
+
+        if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.Escape))
+            Cursor.lockState = CursorLockMode.None;
     }
 }
