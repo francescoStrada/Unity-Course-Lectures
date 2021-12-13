@@ -13,6 +13,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripting/Scripts/DoorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Optimization/Scripts/SceneChangerGateway.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DoorAudio.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,6 +73,7 @@
       <workItem from="1575907601195" duration="2171000" />
       <workItem from="1637859764611" duration="986000" />
       <workItem from="1638464211389" duration="596000" />
+      <workItem from="1639335333582" duration="2816000" />
     </task>
     <servers />
   </component>
