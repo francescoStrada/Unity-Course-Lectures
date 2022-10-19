@@ -15,6 +15,7 @@ public class SimpleThirdPersonController : MonoBehaviour
     void Update()
     {
         //Handle the Input
+        //comment from github
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         _inputVector = new Vector3(h, 0, v);
