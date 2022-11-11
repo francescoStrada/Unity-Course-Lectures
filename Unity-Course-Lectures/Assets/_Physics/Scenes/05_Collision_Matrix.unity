@@ -4250,6 +4250,11 @@ PrefabInstance:
       propertyPath: _cameraT
       value: 
       objectReference: {fileID: 1312140138}
+    - target: {fileID: 2813729054619221511, guid: a54ec62c8c270b5429510dccf22dc631,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2814474434449891728, guid: a54ec62c8c270b5429510dccf22dc631,
         type: 3}
       propertyPath: m_Layer
