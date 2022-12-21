@@ -6,10 +6,6 @@ using DG.Tweening;
 public class ObjectRotation : MonoBehaviour
 {
     
-    void Awake()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

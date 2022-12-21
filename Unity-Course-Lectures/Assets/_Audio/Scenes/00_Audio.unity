@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &296184972
 Transform:
   m_ObjectHideFlags: 0
@@ -287,8 +287,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.55
-  MaxDistance: 15
+  MinDistance: 3
+  MaxDistance: 28.848246
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -298,58 +298,49 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.03179191
+      time: 0.10399246
       value: 1
-      inSlope: -31.467169
-      outSlope: -31.467169
+      inSlope: -9.619927
+      outSlope: -9.619927
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.06358382
+      time: 0.20798492
       value: 0.5
-      inSlope: -7.866792
-      outSlope: -7.866792
+      inSlope: -2.4049819
+      outSlope: -2.4049819
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.12716764
-      value: 0.25
-      inSlope: -1.966698
-      outSlope: -1.966698
+      time: 0.4003601
+      value: 0.1348114
+      inSlope: -0.60124546
+      outSlope: -0.60124546
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.25433528
-      value: 0.125
-      inSlope: -0.4916745
-      outSlope: -0.4916745
+      time: 0.81632996
+      value: 0.009811401
+      inSlope: -0.08561562
+      outSlope: -0.08561562
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 1
     - serializedVersion: 3
-      time: 0.50867057
-      value: 0.031951904
-      inSlope: -0.12291863
-      outSlope: -0.12291863
+      time: 0.98439026
+      value: 0
+      inSlope: -0.13458568
+      outSlope: -0.13458568
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0.0012438148
-      inSlope: -0.03180462
-      outSlope: -0.03180462
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
+      inWeight: 1
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -644,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _openingSound: {fileID: 8300000, guid: 4412f7dbccef6cf4a8b7ded330a7762a, type: 3}
-  _closingSound: {fileID: 8300000, guid: 4412f7dbccef6cf4a8b7ded330a7762a, type: 3}
+  _closingSound: {fileID: 8300000, guid: 20f298e1a81c06a438d56cb6c7f1c035, type: 3}
 --- !u!4 &736156559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8157505234095787400, guid: 03a1694329bc6ef4085b1e9582b08c1e,
@@ -666,7 +657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1166715101
 Transform:
   m_ObjectHideFlags: 0

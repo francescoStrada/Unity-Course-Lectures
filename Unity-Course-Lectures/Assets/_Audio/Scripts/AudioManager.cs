@@ -24,15 +24,15 @@ public class AudioManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            _soundtrackMixerSnapshot.TransitionTo(2f);
+            _soundtrackMixerSnapshot.TransitionTo(4f);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            _environmentMixerSnapshot.TransitionTo(2f);
+            _environmentMixerSnapshot.TransitionTo(4f);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            _narrativeMixerSnapshot.TransitionTo(2f);
+            _narrativeMixerSnapshot.TransitionTo(4f);
         }
     }
 }
