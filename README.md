@@ -9,7 +9,7 @@ The unity project, available in /Unity-Course-Lectures/ has been tested with ver
 The project and exercise material are structured around several key topics of virtual reality development, specifically done in Unity. Follow the links below to visit the dedicated pages of each topic, where you will find details of the educational material and the explanation of the exercises.
 
 - [3D Assets]()
-- [Scripting](scripting.md)
+- [Scripting](docs/scripting/scripting.md)
 - [Physics]()
 - [Scripting Interactions]()
 - [Animations]()
