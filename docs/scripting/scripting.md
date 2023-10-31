@@ -65,7 +65,7 @@ TBD
 
 The objective of the exercise is to recreate the scene which can be found in **"\_ClassExercise/ThirdPersonController/ThirdPersonController"**. It implements a simple ThridPersonController behaviour which controls the character using the WASD keyboard input. The position of the yellow sphere is randomly assigned at startup and whenever the character reaches it a new random position is assigned. 
 
-![](scripting/imgs/scripting-exercise.gif)
+![](imgs/scripting-exercise.gif)
 
 I suggest you try to build it from scratch limiting the times you look at the completed scripts, but if you get stuck, give a glimpse to the functioning script.
 
