@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/00_Callbacks_Debug.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/00_Callbacks_Debug.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/01_TargetFollower.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/01_TargetFollower.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/02_DeltaTime.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/02_DeltaTime.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/03_Keyboard_GetKey.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/03_Keyboard_GetKey.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/04_KeyBoard_Input_Movement.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scenes/04_KeyBoard_Input_Movement.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/scripting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController_Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController_Empty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher_Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher_Empty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Sphere_Target.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Sphere_Target.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/ThirdPersonController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/ThirdPersonController.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/scripting/scripting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/scripting/scripting.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,7 @@
       <workItem from="1638464211389" duration="596000" />
       <workItem from="1639335333582" duration="2816000" />
       <workItem from="1665658220334" duration="1636000" />
-      <workItem from="1698763223913" duration="1145000" />
+      <workItem from="1698763223913" duration="4036000" />
     </task>
     <servers />
   </component>

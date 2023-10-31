@@ -28,7 +28,7 @@ public class SimpleThirdPersonController : MonoBehaviour
         if (_inputSpeed <= 0f)
             return;
 
-        //Calculate rotation vector and rotate
+        //Calculate the new expected direction (newDir) and rotate
         Vector3 newDir = Vector3.RotateTowards(transform.forward, _targetDirection, RotationSpeed * Time.deltaTime, 0f);
         transform.rotation = Quaternion.LookRotation(newDir);
         

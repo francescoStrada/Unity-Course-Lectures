@@ -63,3 +63,65 @@ Further details on the GetAxis() function can be found in the [documentation pag
 TBD
 ## Exercise
 
+The objective of the exercise is to recreate the scene which can be found in **"\_ClassExercise/ThirdPersonController/ThirdPersonController"**. It implements a simple ThridPersonController behaviour which controls the character using the WASD keyboard input. The position of the yellow sphere is randomly assigned at startup and whenever the character reaches it a new random position is assigned. 
+
+![](scripting/imgs/scripting-exercise.gif)
+
+I suggest you try to build it from scratch limiting the times you look at the completed scripts, but if you get stuck, give a glimpse to the functioning script.
+
+Let's now breakdown the final output in a sequence of steps.
+
+### 1. Environment Setup
+
+The first thing to do is create an environment in which the character can move. You will need:
+- a plane on top of which the character can move
+
+- a game object representing a character, in the example this is achieved simply with an empty containing two cylinders. **The Yellow cylinder is aligned with the empty Forward vector.**
+
+![](imgs/scripting-exercise-character.png)
+
+- some obstacles to make the movement more challenging. In the example scene they are created using simple cubes combined together.
+
+- a game object, for example a sphere, representing the target to reach
+
+- a camera to render everything
+
+To simplify your work, and focus more on the scripting side of things, in the same folder you can find a scene called "", which contains all the required GameObjects but with no scripts attached.
+### 2. Random Target Positioning
+
+The script on the target should control two main behaviours: 
+- random positioning on the plane the object
+- check if the player has reached the target and then reposition
+
+Lets start with the first behaviour. Create a script, or use the TargetReacher_Empty.cs and in the Start function write the code to position the game object somewhere randomly on the plane. Do this by assigning a new Vector3 to the [transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html) property. Use the Random function [Range](https://docs.unity3d.com/ScriptReference/Random.Range.html) to generate random values.
+
+Attach the script to the correct game object, press Play and see if the random positioning works as expected. 
+### 3. Character Movement
+
+To handle the character movement you need a new script, so create one, or use SimpleThirdPersonController_Empty.cs and first define the necessary variables. Which are:
+
+- a reference to the main camera
+- a rotation speed
+- a movement speed
+
+During the update cycle what you need to do is: 
+
+- Get the Input using Input.GetAxis() & assign the values to a new direction Vector3
+- Align the direction According to Camera Orientation (use function [TransformDirection](https://docs.unity3d.com/ScriptReference/Transform.TransformDirection.html))
+- Calculate the new direction vector between the current forward and the target direction calculated previously. To calculate it use the [Vector3.RotateTowards()](https://docs.unity3d.com/ScriptReference/Vector3.RotateTowards.html) method.
+- Rotate the object based on the rotation value calculated in the previous step. To rotate you can use [Quaternion.LookRotation()](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) function.
+- Move along the transform forward vector using the [transform.Translate()](https://docs.unity3d.com/ScriptReference/Transform.Translate.html) method
+
+Attach the script to the character game object, press Play and control it.
+
+If some steps of the process are not clear, refer to the SimpleThirdPersonController.cs already working script.
+### 4. Target Reach Detection
+
+Now the last step. We need the target to verify if the has reached a minimum distance in order to reposition somewhere else. To do so:
+
+- make sure that the TargetReacher script (step 2) has a reference to the character
+- during the update cycle, calculate the distance between the character and the target. To do this, use the function [Vector3.Distance()](https://docs.unity3d.com/ScriptReference/Vector3.Distance.html)
+- check if the values is smaller than a minimum value. This value can be made as a class variable
+- if smaller, reposition the object in a new random position, as you did in step 2.
+
+
