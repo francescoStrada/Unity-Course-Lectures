@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController_Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/SimpleThirdPersonController_Empty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher_Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Scripts/TargetReacher_Empty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Sphere_Target.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/Sphere_Target.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/ThirdPersonController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ThirdPersonController/ThirdPersonController.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/00_Rigidbodies.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/00_Rigidbodies.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/01_Colliders.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/01_Colliders.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/02_Joints.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/02_Joints.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/03_Explosions.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/03_Explosions.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/04_Rigidbody_Movement.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/04_Rigidbody_Movement.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/05_Collision_Matrix.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/05_Collision_Matrix.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/scripting/scripting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/scripting/scripting.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Utente\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Utente\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Unity.exe" />
@@ -110,7 +118,8 @@
       <workItem from="1638464211389" duration="596000" />
       <workItem from="1639335333582" duration="2816000" />
       <workItem from="1665658220334" duration="1636000" />
-      <workItem from="1698763223913" duration="4036000" />
+      <workItem from="1698763223913" duration="4633000" />
+      <workItem from="1699539653267" duration="3323000" />
     </task>
     <servers />
   </component>
