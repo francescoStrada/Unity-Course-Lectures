@@ -53,9 +53,9 @@ The video is an extract of the package **Obstacle Course Pack** which can be dow
 
 The steps to complete the exercise are the following:
  
-1. [Download and Install the Asset](<physics#Step 1 Download and Install the Asset>)
-2. [Tryout the example scene](<physics#Step 2 Tryout the example scene>)
-3. [Try to reproduce some (or all) of the obstacles shown in the example scene](<physics#Step 3 Reproduce It!>)
+1. [Download and Install the Asset](#step-1-download-and-install-the-asset)
+2. [Tryout the example scene](#step-2-tryout-the-example-scene)
+3. [Try to reproduce some (or all) of the obstacles shown in the example scene](#step-3-reproduce-it>)
 
 ### Step 1: Download and Install the Asset
 
