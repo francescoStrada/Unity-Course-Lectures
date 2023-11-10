@@ -55,7 +55,7 @@ The steps to complete the exercise are the following:
  
 1. [Download and Install the Asset](#step-1-download-and-install-the-asset)
 2. [Tryout the example scene](#step-2-tryout-the-example-scene)
-3. [Try to reproduce some (or all) of the obstacles shown in the example scene](#step-3-reproduce-it>)
+3. [Try to reproduce some (or all) of the obstacles shown in the example scene](#step-3-reproduce-it)
 
 ### Step 1: Download and Install the Asset
 
