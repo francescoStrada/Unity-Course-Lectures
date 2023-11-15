@@ -11,7 +11,7 @@ The project and exercise material are structured around several key topics of vi
 - [3D Assets]()
 - [Scripting](docs/scripting/scripting.md)
 - [Physics](docs/physics/physics.md)
-- [Scripting Interactions]()
+- [Scripting Interactions](docs/interactions/interactions.md)
 - [Animations]()
 - [NPCs]()
 - [Lighting & Graphics]()
