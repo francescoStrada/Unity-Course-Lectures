@@ -44,6 +44,11 @@ public class ShootingTower : MonoBehaviour
             PointTarget(directionToTarget);
             
             //Start Shooting, if already started Shooting don't invoke again
+            //In order to call a function a a given repeat rate we are using the available function InvokeRepeating(): https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html
+            //This function takes 3 parameters:
+            //1: the name of the function you want to repeat (here it is "Shoot"),
+            //2: the time when to start repeating (0 means start immediately)
+            //3: the frequency at which the function will be called, expressed in seconds. If the value equals to 1, it means that the function named Shoot will be called every 1 second.
             if(!_isShooting)
                 InvokeRepeating("Shoot", 0f, _shootFrequency);
 
@@ -51,6 +56,8 @@ public class ShootingTower : MonoBehaviour
         }
 
         //Target is NOT visible to the tower
+        //To stop shooting here we use CancelInvoke(): https://docs.unity3d.com/ScriptReference/MonoBehaviour.CancelInvoke.html
+        //This function stops any automatic call to the Shoot() function, we previously started in row 53. 
         CancelInvoke("Shoot");
         _isShooting = false;
         _targetInSight = false;

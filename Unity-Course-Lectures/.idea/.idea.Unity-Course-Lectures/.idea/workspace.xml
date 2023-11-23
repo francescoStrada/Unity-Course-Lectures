@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/00_Rigidbodies.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/00_Rigidbodies.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/01_Colliders.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/01_Colliders.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/02_Joints.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/02_Joints.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/03_Explosions.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/03_Explosions.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/04_Rigidbody_Movement.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/04_Rigidbody_Movement.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/05_Collision_Matrix.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scenes/05_Collision_Matrix.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/scripting/scripting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/scripting/scripting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Prefabs/ShootingTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Prefabs/ShootingTower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Scripts/ShootingTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Scripts/ShootingTower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/ShootingTowers.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/ShootingTowers.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/interactions/interactions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/interactions/interactions.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +17,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Scripts/ShootingTower_Empty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Optimization/Scripts/SceneChangerGateway.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripting/Scripts/DoorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -120,6 +109,9 @@
       <workItem from="1665658220334" duration="1636000" />
       <workItem from="1698763223913" duration="4633000" />
       <workItem from="1699539653267" duration="3323000" />
+      <workItem from="1699630629741" duration="629000" />
+      <workItem from="1700052831745" duration="1891000" />
+      <workItem from="1700757782713" duration="4104000" />
     </task>
     <servers />
   </component>
