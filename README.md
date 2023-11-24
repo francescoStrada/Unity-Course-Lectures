@@ -12,7 +12,7 @@ The project and exercise material are structured around several key topics of vi
 - [Scripting](docs/scripting/scripting.md)
 - [Physics](docs/physics/physics.md)
 - [Scripting Interactions](docs/interactions/interactions.md)
-- [Animations]()
+- [Animations](docs/animations/animations.md)
 - [NPCs]()
 - [Lighting & Graphics]()
 - [Optimization & Builds]()
