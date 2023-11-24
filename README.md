@@ -1,5 +1,5 @@
 # Unity-Course-Lectures
-TEST CHANGE
+
 **DISCLAIMER:
 The repository contents are being uploaded and updated following lectures. Thus, some content may not be available or properly updated.**
 
