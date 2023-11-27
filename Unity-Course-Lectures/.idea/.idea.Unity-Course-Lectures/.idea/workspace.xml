@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Prefabs/ShootingTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Prefabs/ShootingTower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Scripts/ShootingTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/Scripts/ShootingTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/ShootingTowers.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ClassExercises/ShootingTowers/ShootingTowers.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/interactions/interactions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/interactions/interactions.md" afterDir="false" />
-    </list>
+    <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,6 +106,7 @@
       <workItem from="1699630629741" duration="629000" />
       <workItem from="1700052831745" duration="1891000" />
       <workItem from="1700757782713" duration="4104000" />
+      <workItem from="1700835537609" duration="733000" />
     </task>
     <servers />
   </component>
