@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class NavMeshAgentRandomPosition : MonoBehaviour
 {
@@ -11,34 +12,58 @@ public class NavMeshAgentRandomPosition : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private Renderer _renderer;
     private Color _originalColor;
-    private float _currentPathTotalDistance = -1f;
+    private float _totalDistanceToTravel = -1f;
+
+    private bool _arrived = false;
 
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _renderer = GetComponent<Renderer>();
         _originalColor = _renderer.material.color;
+
+        _navMeshAgent.avoidancePriority = Random.Range(0, 32);
+        
         SetDestination();
     }
 
     void Update()
     {
-        if(DestinationReached())
+        if( !_arrived && DestinationReached())
             SetDestination();
 
-        UpdateColor();
+        if(!_arrived)
+            UpdateColor();
     }
 
     private void UpdateColor()
     {
-        if(_currentPathTotalDistance < 0f)
+        if(_totalDistanceToTravel <= 0f)
+        {
+            _renderer.material.color = _originalColor;
             return;
-        float pathCompletePercentage = Mathf.Clamp(_navMeshAgent.remainingDistance / _currentPathTotalDistance, 0, 1);
+        }
+
+        if (_navMeshAgent.remainingDistance >= Mathf.Infinity ||
+            _navMeshAgent.remainingDistance < 0f ||
+            _navMeshAgent.remainingDistance <= Mathf.NegativeInfinity ||
+            _navMeshAgent.remainingDistance > _totalDistanceToTravel)
+        {
+            //During navigation sometimes the remaining distance property might not be accurate, in this case do not update the color of the agent
+            return;
+        }
+        
+        float pathCompletePercentage = Mathf.Clamp01(_navMeshAgent.remainingDistance / _totalDistanceToTravel);
         _renderer.material.color = _gradient.Evaluate(pathCompletePercentage);
+        
+        
     }
 
     private void SetDestination()
     {
+        _navMeshAgent.ResetPath();
+        _arrived = false;
+        
         NavMeshPath path = new NavMeshPath();
         Vector3 randomPosition = NavAgentSpawner.Instance.GetRandomPositionOnGround();
         
@@ -47,30 +72,32 @@ public class NavMeshAgentRandomPosition : MonoBehaviour
             randomPosition = NavAgentSpawner.Instance.GetRandomPositionOnGround();
         }
 
-        _navMeshAgent.SetDestination(randomPosition);
-        StartCoroutine(WaitForPathTotalDistance());
+        _navMeshAgent.SetPath(path);
+        StartCoroutine(WaitForPathReady());
     }
 
+    private IEnumerator WaitForPathReady()
+    {
+        _totalDistanceToTravel = -1f;
+
+        yield return new WaitUntil(() => _navMeshAgent.hasPath);
+        yield return new WaitUntil(() => _navMeshAgent.remainingDistance < Mathf.Infinity);
+
+        _totalDistanceToTravel = _navMeshAgent.remainingDistance;
+        
+    }
+    
     private bool DestinationReached()
     {
         if (!_navMeshAgent.pathPending)
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-                if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude <= 0f)
-                    return true;
-
-        return false;
-    }
-
-    private IEnumerator WaitForPathTotalDistance()
-    {
-        _currentPathTotalDistance = -1f;
-        _renderer.material.color = _originalColor;
-        while (_navMeshAgent.remainingDistance >= Mathf.Infinity || _navMeshAgent.remainingDistance <= 0f)
         {
-            yield return null;
+            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+            {
+                _arrived = true;
+                return true;
+            }
         }
 
-        _navMeshAgent.isStopped = false;
-        _currentPathTotalDistance = _navMeshAgent.remainingDistance;
+        return false;
     }
 }
