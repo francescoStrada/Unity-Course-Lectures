@@ -746,7 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _navAgentPrefab: {fileID: 4343580715662014705, guid: 0c46e31a05621d2458d8be32378fe458,
     type: 3}
-  _navMeshAgentsToSpawn: 30
+  _navMeshAgentsToSpawn: 20
   _groundCollider: {fileID: 838116533}
 --- !u!4 &576601043
 Transform:
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.13333334
+  m_VoxelSize: 0.33333334
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 9e1c2003e4234ef4f865a70def99804d, type: 2}
   m_BuildHeightMesh: 0

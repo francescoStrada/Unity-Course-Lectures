@@ -24,7 +24,6 @@ public class NavAgentSpawner : MonoBehaviour
         for (int i = 0; i < _navMeshAgentsToSpawn; i++)
         {
             GameObject agent = Instantiate(_navAgentPrefab, GetRandomPositionOnGround(), Quaternion.identity);
-            NavMeshAgentRandomPosition targetReached = agent.GetComponent<NavMeshAgentRandomPosition>();
         }
     }
 
@@ -33,6 +32,6 @@ public class NavAgentSpawner : MonoBehaviour
     {
         Vector3 min = _groundCollider.bounds.min;
         Vector3 max = _groundCollider.bounds.max;
-        return new Vector3(Random.Range(min.x, max.x), 2f, Random.Range(min.z, max.z));
+        return new Vector3(Random.Range(min.x, max.x), _groundCollider.transform.position.y, Random.Range(min.z, max.z));
     }
 }
