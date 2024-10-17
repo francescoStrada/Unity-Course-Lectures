@@ -3,6 +3,7 @@
 **DISCLAIMER:
 The repository contents are being uploaded and updated following lectures. Thus, some content may not be available or properly updated.**
 
+
 This repository contains the Unity educational material for the Virtual Reality course held @Politecnico di Torino. 
 The unity project, available in /Unity-Course-Lectures/ has been tested with version Unity_2020.3 (LTS).
 
