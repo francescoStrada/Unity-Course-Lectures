@@ -17,11 +17,24 @@ public class Tower : MonoBehaviour {
 	[SerializeField]
 	private float _tracking_semi_angle = 30f;
 
+	[SerializeField]
+	private float _shooting_frequency = 3f;
+
+	[SerializeField]
+	private float _shooting_force = 100f;
+
+	[SerializeField]
+	private GameObject _bullet;
+
 	private Component _rotating_turret;
 
 	private Component _barrel;
 
 	private SimpleThirdPRigidbodyController _player;
+
+	private float _time_from_last_shot = 0f;
+
+	private float _shooting_period;
 
 	void Start() {
 		_rotating_turret = FindChild("RotatingTower");
@@ -31,14 +44,35 @@ public class Tower : MonoBehaviour {
 		if(!_rotating_turret) throw new System.Exception($"Tower {name} cannot find its \"RotatingTurret\" component");
 		if(!_barrel) throw new System.Exception($"Tower {name} cannot find its \"RayOrigin\" component");
 		if(!_player) throw new System.Exception($"Tower {name} cannot find the player");
+
+		_shooting_period = 1 / _shooting_frequency;
 	}
 
 	void Update() {
 		Vector3? dir = PlayerSight();
-		if(dir == null)
+		if(dir == null) {
 			CasualTurn();
-		else
+			StopShooting();
+		} else {
 			FightTurn(dir.Value);
+			HandleShooting();
+		}
+	}
+
+	private void StopShooting() {
+		_time_from_last_shot = _shooting_period;
+	}
+
+	private void HandleShooting() {
+		_time_from_last_shot += Time.deltaTime;
+		if(_time_from_last_shot >= _shooting_period) {
+			_time_from_last_shot = 0;
+			Vector3 dir = _barrel.transform.forward;
+
+			GameObject shot_bullet = Instantiate(_bullet, _barrel.transform.position, _rotating_turret.transform.rotation);
+			shot_bullet.transform.LookAt(_barrel.transform.forward);
+			shot_bullet.GetComponent<Rigidbody>().AddForce(dir * _shooting_force, ForceMode.Impulse);
+		}
 	}
 
 	private void CasualTurn() {

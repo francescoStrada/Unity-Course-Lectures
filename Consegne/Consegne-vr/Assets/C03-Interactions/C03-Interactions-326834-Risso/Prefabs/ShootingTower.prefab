@@ -423,6 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3118913678798165537}
+  - component: {fileID: 3125592736535210292}
   m_Layer: 0
   m_Name: ShootingTower
   m_TagString: Untagged
@@ -447,3 +448,22 @@ Transform:
   - {fileID: 4368670037027538689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3125592736535210292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8149568692447161344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d138cb61479374893c5fcd2d5b9193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _casual_turn_speed: 1
+  _fight_turn_speed: 2
+  _tracking_radius: 30
+  _tracking_semi_angle: 30
+  _shooting_frequency: 3
+  _shooting_force: 100
+  _bullet: {fileID: 1152107189331903796, guid: ea5c6c099054ce145b630da94c94ef02, type: 3}
