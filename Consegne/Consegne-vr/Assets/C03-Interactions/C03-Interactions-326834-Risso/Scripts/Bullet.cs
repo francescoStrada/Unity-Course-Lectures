@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
-	void Start() {}
+namespace c03.exercise {
 
-	void Update() {}
+
+	public class Bullet : MonoBehaviour {
+		void OnCollisionEnter(Collision collision) {}
+	}
 }
