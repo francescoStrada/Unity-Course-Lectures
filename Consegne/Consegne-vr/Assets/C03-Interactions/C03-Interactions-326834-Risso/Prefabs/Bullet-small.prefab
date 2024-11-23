@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1152107189331903796
+--- !u!1 &8464292232245062963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2174652129609613657}
-  - component: {fileID: 7506565845520294153}
-  - component: {fileID: 61085459658128109}
-  - component: {fileID: 7967467035157531836}
-  - component: {fileID: 6811066238719334343}
-  - component: {fileID: 6154408239349585770}
+  - component: {fileID: 1365793194137873240}
+  - component: {fileID: 3541941175656766105}
+  - component: {fileID: 481938877896157822}
+  - component: {fileID: 3016307925777489571}
+  - component: {fileID: 6203808221908957842}
+  - component: {fileID: 2355953516829432078}
   m_Layer: 2
-  m_Name: Bullet
+  m_Name: Bullet-small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2174652129609613657
+--- !u!4 &1365793194137873240
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.359, y: 6.266, z: 5.017}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
+  m_LocalPosition: {x: 1.359, y: 6.27, z: -11.26}
+  m_LocalScale: {x: 0.19, y: 0.19, z: 0.19}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &7506565845520294153
+--- !u!33 &3541941175656766105
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &61085459658128109
+--- !u!23 &481938877896157822
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7967467035157531836
+--- !u!136 &3016307925777489571
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -103,33 +103,32 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6811066238719334343
+--- !u!114 &6203808221908957842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24754bcd22a32be44a348e1be4cb9d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawned_on_collision: {fileID: 8464292232245062963, guid: 8307254edab227c4c9d5e027299d75b9, type: 3}
-  _spawn_force: 1
---- !u!54 &6154408239349585770
+  _destruction_time: 1
+--- !u!54 &2355953516829432078
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152107189331903796}
+  m_GameObject: {fileID: 8464292232245062963}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0

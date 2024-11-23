@@ -1521,7 +1521,7 @@ Transform:
   m_GameObject: {fileID: 895632282}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 4.22, z: 0}
+  m_LocalPosition: {x: -0, y: 4.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2814,6 +2814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3125592736535210292, guid: 92bc0650614080946866b888bc219db9, type: 3}
+      propertyPath: _tracking_radius
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8149568692447161344, guid: 92bc0650614080946866b888bc219db9, type: 3}
       propertyPath: m_Name
       value: ShootingTower
@@ -2895,7 +2899,7 @@ Transform:
   m_GameObject: {fileID: 2814474433974317433}
   serializedVersion: 2
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.26, z: 0.61}
+  m_LocalPosition: {x: -0, y: 0.5, z: 0.61}
   m_LocalScale: {x: 0.38279, y: 0.38279, z: 0.38279}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2992,8 +2996,8 @@ Transform:
   m_GameObject: {fileID: 6782211306780025519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -9.777068e-12, w: 1}
-  m_LocalPosition: {x: 0.01, y: 2.5, z: 0.01}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5000002}
+  m_LocalPosition: {x: 0.01, y: 4.0722, z: 0.01}
+  m_LocalScale: {x: 2.5, y: 4.072315, z: 2.5000002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2817041523125771029}
@@ -3087,7 +3091,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
+  m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
