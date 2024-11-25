@@ -9,7 +9,7 @@ public class GuardFSM : MonoBehaviour
     [SerializeField] private List<Transform> _waypoints;
     [SerializeField] private GameObject _target;
     [SerializeField] private float _minChaseDistance = 3f;
-    [SerializeField] private float _minAttackDistance = 2f;
+    //[SerializeField] private float _minAttackDistance = 2f;
     [SerializeField] private float _stoppingDistance = 1f;
 
     private FiniteStateMachine<GuardFSM> _stateMachine;

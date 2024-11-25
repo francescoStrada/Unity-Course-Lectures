@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ComponentRetrival : MonoBehaviour {
 
-    protected Rigidbody rigidbody;
+    protected Rigidbody rb;
 
     protected float jumpStartTime; // seconds
     protected float timer = 0f;
@@ -13,10 +13,10 @@ public class ComponentRetrival : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
 
-        if (rigidbody != null)
-            rigidbody.mass = Random.Range(1f, 20);
+        if (rb != null)
+            rb.mass = Random.Range(1f, 20);
 
         jumpStartTime = Random.Range(1f, 4f);
 	}
@@ -27,12 +27,12 @@ public class ComponentRetrival : MonoBehaviour {
         timer += Time.deltaTime;
         if(timer >= jumpStartTime)
         {
-            rigidbody.AddForce(Vector3.up * 20f, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * 20f, ForceMode.Impulse);
             
             //Reassign new random variables
             timer = 0;
             jumpStartTime = Random.Range(1f, 4f);
-            rigidbody.mass = Random.Range(1f, 20);
+            rb.mass = Random.Range(1f, 20);
         }
 		
 	}

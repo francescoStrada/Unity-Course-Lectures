@@ -12,7 +12,7 @@ public class ButtonReactableCube : MonoBehaviour
     public float maxScaleVariation = 2f;
     public float maxYPosVariation = 3f;
 
-    private MeshRenderer renderer;
+    private MeshRenderer buttonRenderer;
     private Vector3 initialPos;
     private Vector3 initialScale;
 
@@ -23,7 +23,7 @@ public class ButtonReactableCube : MonoBehaviour
         changeScaleButton.OnButtonPressed += OnChangeScaleButtonPressed;
         changeYPosButton.OnButtonPressed += OnChangeYPosButtonPressed;
 
-        renderer = GetComponent<MeshRenderer>();
+        buttonRenderer = GetComponent<MeshRenderer>();
 
         initialPos = transform.position;
         initialScale = transform.localScale;
@@ -46,8 +46,8 @@ public class ButtonReactableCube : MonoBehaviour
 
         int randomIndex = Random.Range(0, colors.Count - 1);
         Color randomColor = colors[randomIndex];
-        if (renderer != null)
-            renderer.material.color = randomColor;
+        if (buttonRenderer != null)
+            buttonRenderer.material.color = randomColor;
     }
 
     private void OnChangeScaleButtonPressed()

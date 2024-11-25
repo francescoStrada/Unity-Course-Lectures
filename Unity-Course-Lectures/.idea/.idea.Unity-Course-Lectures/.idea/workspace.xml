@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Optimization/Scenes/MultiScene/SceneB.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Optimization/Scenes/MultiScene/SceneB.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Prefabs/EnemyBoss.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Prefabs/EnemyBoss.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/ComponentRetrival.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/ComponentRetrival.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyBoss.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyBoss.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyEventListner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyEventListner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/SingleWallPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/SingleWallPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_NPCs/Scripts/GuardFSM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_NPCs/Scripts/GuardFSM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scripts/RigidbodyReposition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Physics/Scripts/RigidbodyReposition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scripts/Button3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripting/Scripts/Button3D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scripts/ButtonReactableCube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripting/Scripts/ButtonReactableCube.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +46,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1UkjgFG5Cx9AXTEkmnOxSEnq2fD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,18 +69,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Utente\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Utente\\AppData\\Local\\Symbols\\src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.29f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.49f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\MyStuff\Didattica\VR24\Unity-Course-Lectures\Unity-Course-Lectures -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\MyStuff\Didattica\VR24\Unity-Course-Lectures\Unity-Course-Lectures" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -79,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.29f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.49f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\MyStuff\Didattica\VR24\Unity-Course-Lectures\Unity-Course-Lectures -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\MyStuff\Didattica\VR24\Unity-Course-Lectures\Unity-Course-Lectures" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -142,6 +144,7 @@
       <workItem from="1704718017210" duration="11198000" />
       <workItem from="1704794824825" duration="5073000" />
       <workItem from="1720017878987" duration="943000" />
+      <workItem from="1732542235087" duration="608000" />
     </task>
     <servers />
   </component>
@@ -150,6 +153,11 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

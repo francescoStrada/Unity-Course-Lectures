@@ -16,7 +16,7 @@ public class Button3D : MonoBehaviour
     public Color unpressedColor;
     public Color pressedColor;
 
-    private MeshRenderer renderer;
+    private MeshRenderer buttonRenderer;
     private bool isPressed = false;
     private float initialLocalYPos;
 
@@ -25,9 +25,9 @@ public class Button3D : MonoBehaviour
     {
         initialLocalYPos = movingPieceT.localPosition.y;
 
-        renderer = movingPieceT.GetComponent<MeshRenderer>();
-        if (renderer != null)
-            renderer.material.color = unpressedColor;
+        buttonRenderer = movingPieceT.GetComponent<MeshRenderer>();
+        if (buttonRenderer != null)
+            buttonRenderer.material.color = unpressedColor;
 
     }
 
@@ -37,8 +37,8 @@ public class Button3D : MonoBehaviour
             return;
 
         isPressed = true;
-        if (renderer != null)
-            renderer.material.color = pressedColor;
+        if (buttonRenderer != null)
+            buttonRenderer.material.color = pressedColor;
 
         Sequence pressSequence = DOTween.Sequence();
         pressSequence.Append(movingPieceT.DOLocalMoveY(localYFinalPressedPos, pressDuration).OnComplete(() => 
@@ -51,8 +51,8 @@ public class Button3D : MonoBehaviour
         pressSequence.OnComplete(() => 
         {
             isPressed = false;
-            if (renderer != null)
-                renderer.material.color = unpressedColor;
+            if (buttonRenderer != null)
+                buttonRenderer.material.color = unpressedColor;
         });
     }
 }

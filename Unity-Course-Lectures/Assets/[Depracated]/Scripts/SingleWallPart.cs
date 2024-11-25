@@ -6,11 +6,11 @@ public class SingleWallPart : MonoBehaviour
     public Transform explosionPosition;
 
     private bool explode = false;
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
     void OnEnable()
     {
         explode = true;
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -18,7 +18,7 @@ public class SingleWallPart : MonoBehaviour
         if (explode)
         {
             
-            rigidbody.AddExplosionForce(30, explosionPosition.position, 5f);
+            rb.AddExplosionForce(30, explosionPosition.position, 5f);
 
             
         }
