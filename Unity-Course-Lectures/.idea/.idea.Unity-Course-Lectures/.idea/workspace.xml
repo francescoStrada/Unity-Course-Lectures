@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a78272-53f1-47b5-a9d2-4003ea3aa6b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Course-Lectures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Prefabs/EnemyBoss.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Prefabs/EnemyBoss.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/ComponentRetrival.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/ComponentRetrival.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyBoss.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyBoss.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyEventListner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/EnemyEventListner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/SingleWallPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Depracated]/Scripts/SingleWallPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_NPCs/Scripts/GuardFSM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_NPCs/Scripts/GuardFSM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Physics/Scripts/RigidbodyReposition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Physics/Scripts/RigidbodyReposition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scripts/Button3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripting/Scripts/Button3D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripting/Scripts/ButtonReactableCube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripting/Scripts/ButtonReactableCube.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Animations/Scripts/MoveCubeWayPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Animations/Scripts/MoveCubeWayPoints.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +130,7 @@
       <workItem from="1704718017210" duration="11198000" />
       <workItem from="1704794824825" duration="5073000" />
       <workItem from="1720017878987" duration="943000" />
-      <workItem from="1732542235087" duration="608000" />
+      <workItem from="1732542235087" duration="1988000" />
     </task>
     <servers />
   </component>

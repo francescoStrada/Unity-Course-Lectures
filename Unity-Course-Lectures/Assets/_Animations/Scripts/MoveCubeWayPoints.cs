@@ -15,7 +15,7 @@ public class MoveCubeWayPoints : MonoBehaviour
     void Start()
     {
         if (_useCoroutine)
-            _coroutine = StartCoroutine(MoveAlongWaipointsCoroutine());
+            _coroutine = StartCoroutine(MoveAlongWaypointsCoroutine());
     }
 
     
@@ -26,7 +26,7 @@ public class MoveCubeWayPoints : MonoBehaviour
         if (_useCoroutine)
         {
             if (Input.GetKeyDown(KeyCode.S) && _coroutine == null)
-                _coroutine = StartCoroutine(MoveAlongWaipointsCoroutine());
+                _coroutine = StartCoroutine(MoveAlongWaypointsCoroutine());
             
             else if (Input.GetKeyDown(KeyCode.S) && _coroutine != null)
             {
@@ -45,7 +45,7 @@ public class MoveCubeWayPoints : MonoBehaviour
 
     }
 
-    private IEnumerator MoveAlongWaipointsCoroutine()
+    private IEnumerator MoveAlongWaypointsCoroutine()
     {
         while (true)
         {
