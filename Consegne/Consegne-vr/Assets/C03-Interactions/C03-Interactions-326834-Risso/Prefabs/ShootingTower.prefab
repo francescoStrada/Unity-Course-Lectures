@@ -462,8 +462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _casual_turn_speed: 1
   _fight_turn_speed: 2
-  _tracking_radius: 30
+  _tracking_radius: 40
   _tracking_semi_angle: 30
-  _shooting_frequency: 3
-  _shooting_force: 100
+  _shooting_frequency: 10
+  _shooting_force: 50
   _bullet: {fileID: 1152107189331903796, guid: ea5c6c099054ce145b630da94c94ef02, type: 3}
