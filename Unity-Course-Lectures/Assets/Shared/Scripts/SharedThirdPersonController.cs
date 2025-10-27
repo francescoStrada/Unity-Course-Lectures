@@ -52,7 +52,7 @@ public class SharedThirdPersonController : MonoBehaviour
 
         if (_resetVelocity)
         {
-            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.linearVelocity = Vector3.zero;
             _resetVelocity = false;
         }
 

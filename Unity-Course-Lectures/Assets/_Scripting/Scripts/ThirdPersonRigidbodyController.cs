@@ -52,7 +52,7 @@ public class ThirdPersonRigidbodyController : MonoBehaviour
 
         if (_resetVelocity)
         {
-            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.linearVelocity = Vector3.zero;
             _resetVelocity = false;
             Debug.Log("velocty setted to zero");
         }
