@@ -1,18 +1,24 @@
+---
+title: ES04 - Physics
+nav_order: 3
+---
+
 # Physics
 
 An introduction to the main concepts associated with Physics simulations in Unity are covered in [this](https://youtube.com/playlist?list=PLk0p6RIhmcfnrVFCpKnPvYr6SZqTEiTAx) YouTube playlist.
 
-In this page you can find an overview of the [project contents](docs/physics/physics.md#Project Material) seen in the video and an [exercise](physics.md#Exercise) to practice the acquired knowledge. 
+In this page you can find an overview of the [project contents](#project-material) seen in the videos and an [exercise](#exercise) to practice the acquired knowledge.
+
 ## Project Material
 
 All the videos refer to scenes and scripts contained in the "Assets/\_Physics" folder.  
 
-- [00-Rigidbodies](physics.md#00-Rigidbodies)
-- [01-Colliders](physics.md#01-Colliders)
-- [02-Joints](physics.md#02-Joints)
-- [03-Explosions](physics.md#03-Explosions)
-- [04-Rigidbody-Movement](physics.md#04-Rigidbody-Movement)
-- [05-Collision-Matrix](physics.md#05-Collision-Matrix)
+- [00-Rigidbodies](#00-rigidbodies)
+- [01-Colliders](#01-colliders)
+- [02-Joints](#02-joints)
+- [03-Explosions](#03-explosions)
+- [04-Rigidbody-Movement](#04-rigidbody-movement)
+- [05-Collision-Matrix](#05-collision-matrix)
 
 <blockquote class="callout callout_default" theme="">
 <p>Most of the scenes in the Physics collection are intended to be viewed from the <b>Scene</b> tab of the Unity Editor as the Camera is not correctly positioned. Thus, simply press play in the editor and then navigate the environment in the <b>Scene</b> view.</p> </blockquote>
@@ -79,14 +85,15 @@ Press Play and move the character controller using the WASD keys.
 
 You can compare another character controller by activating in the hierarchy the game object "CharacterController_ThirdPersonMovement". You can control it using the same keys as before. 
 
-This controller moves using the [CharacterController](https://docs.unity3d.com/Manual/class-CharacterController.html) component which is mainly used for third-person or first-person player control that does not make use of Rigidbody physics.
+This controller moves using the [CharacterController](https://docs.unity3d.com/Manual/class-CharacterController.html) component which is mainly used for third-person or first-person player control that does not make use of Rigidbody physics.
 ### 05-Collision-Matrix
 
 ![](imgs/physics-05-collision-matrix.gif)
 
-This scene is the same as the previous but the purple cubes are assigned to a specific [Layer](https://docs.unity3d.com/Manual/Layers.html) named *NoCollision* which prevents objects to collide with them. This is achieved by setting the [**collision matrix**](https://docs.unity3d.com/Manual/LayerBasedCollision.html) which can be accessed in the Unity menu bar, go to **Edit** > **Project Settings**, then select the **Physics** category to open the [Physics](https://docs.unity3d.com/Manual/class-PhysicsManager.html) window. From there scroll down and you can select which layers on the Collision Matrix will interact with the other layers by checking them.
+This scene is the same as the previous but the purple cubes are assigned to a specific [Layer](https://docs.unity3d.com/Manual/Layers.html) named *NoCollision* which prevents objects to collide with them. This is achieved by setting the [**collision matrix**](https://docs.unity3d.com/Manual/LayerBasedCollision.html) which can be accessed in the Unity menu bar, go to **Edit** > **Project Settings**, then select the **Physics** category to open the [Physics](https://docs.unity3d.com/Manual/class-PhysicsManager.html) window. From there scroll down and you can select which layers on the Collision Matrix will interact with the other layers by checking them.
 
 ![](imgs/physics-05-collision-matrix-example.png)
+
 ## Exercise
 
 The exercise for the physics topic consists in trying to reproduce a scene composed of several obstacles whose behaviour is physics based. In few words you should try to achieve something as displayed in [this video](https://www.youtube.com/watch?v=5-58sG5vy8g).
@@ -166,7 +173,7 @@ To move in the scene you can use the third person controller prefab which came w
 
 - One scripts on each prefab need references to be set. Select the Player GameObject in the scene and in the inspector on the CharacterControls component and assign to the Cam property the Camera Holder game object in the scene.
 
-![](physics-exercise-08-player.png)
+![](imgs/physics-exercise-08-player.png)
 
 - Now select the Camera Holder game object and in the CameraManager component assign the Player game object to the Target property.
 
@@ -175,4 +182,4 @@ To move in the scene you can use the third person controller prefab which came w
 Make sure the character is placed on the plane you previously created, press play and move around!
 #### Create the Obstacles
 
-Now try to (re)create in your scene several obstacles which you tried in the ObstacleCoursePack sample scene.   
+Now try to (re)create in your scene several obstacles which you tried in the ObstacleCoursePack sample scene.

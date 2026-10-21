@@ -1,18 +1,25 @@
+---
+title: ES03 - Scripting
+nav_order: 2
+---
+
 # Scripting
 
 An introduction to the main concepts associated with Scripting are covered in [this](https://youtube.com/playlist?list=PLk0p6RIhmcflK_474ACvIo4MsL6yl-09b) YouTube playlist.
 
-In this page you can find an overview of the [project contents](docs/scripting/scripting.md#Project Material) seen in the video and an [exercise](scripting.md#Exercise) to practice the acquired knowledge.
+On this page, you can find an overview of the [project contents](#project-material) seen in the video.
+
 ## Project Material
 
 All the videos refer to scenes and scripts contained in the "Assets/_Scripting" folder.  
 
-- [00-Callbacks-Debug](scripting.md#00-Callbacks-Debug)
-- [01-TargetFollower](scripting.md#01-TargetFollower)
-- [02-DeltaTime](scripting.md#02-DeltaTime)
-- [03-Keyboard-GetKey](scripting.md#03-Keyboard-GetKey)
-- [04-KeyBoard-Input-Movement](scripting.md#04-KeyBoard-Input-Movement)
-- [05-Camera-Independent-Movement](scripting.md#05-Camera-Independent-Movement)
+- [00-Callbacks-Debug](#00-callbacks-debug)
+- [01-TargetFollower](#01-targetfollower)
+- [02-DeltaTime](#02-deltatime)
+- [03-Keyboard-GetKey](#03-keyboard-getkey)
+- [04-KeyBoard-Input-Movement](#04-keyboard-input-movement)
+- [05-Camera-Independent-Movement](#05-camera-independent-movement)
+
 ### 00-Callbacks-Debug
 
 This scene simply contains a red cube with a script attached to it that prints to the editor console, using the Debug.Log(), the different [Unity callbacks](https://docs.unity3d.com/Manual/ExecutionOrder.html).  
@@ -61,6 +68,7 @@ Further details on the GetAxis() function can be found in the [documentation pag
 ### 05-Camera-Independent-Movement
 
 TBD
+
 ## Exercise
 
 The objective of the exercise is to recreate the scene which can be found in **"\_ClassExercise/ThirdPersonController/ThirdPersonController"**. It implements a simple ThridPersonController behaviour which controls the character using the WASD keyboard input. The position of the yellow sphere is randomly assigned at startup and whenever the character reaches it a new random position is assigned. 
@@ -123,5 +131,3 @@ Now the last step. We need the target to verify if the has reached a minimum dis
 - during the update cycle, calculate the distance between the character and the target. To do this, use the function [Vector3.Distance()](https://docs.unity3d.com/ScriptReference/Vector3.Distance.html)
 - check if the values is smaller than a minimum value. This value can be made as a class variable
 - if smaller, reposition the object in a new random position, as you did in step 2.
-
-

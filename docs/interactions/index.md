@@ -1,33 +1,53 @@
-# Interactions
+---
+title: ES06 - Interactions
+nav_order: 4
+---
+
+# Scripting Interactions
 
 An introduction to the main concepts associated with scripting interactions in Unity are covered in [this](https://youtube.com/playlist?list=PLk0p6RIhmcfkfKKCWE-4T7lGyiatcqxay) YouTube playlist.
 
-In this page you can find an overview of the [project contents](#project-material) seen in the video and an [exercise](interactions.md#Exercise) to practice the acquired knowledge. 
+In this page you can find an overview of the [project contents](#project-material) seen in the videos. 
 
-# Project Material
+## Project Material
 
 All the videos refer to scenes and scripts contained in the "Assets/\_Scripting" folder.
 
-- [06-OnCollision](interactions.md#06-OnCollision)
-- [07-OnTrigger](interactions.md#07-OnTrigger)
-- [08-Raycasting](interactions.md#08-Raycasting)
-- [09-EnvironmentInteraction-FP](interactions.md#09-EnvironmentInteraction-FP)
+- [06-OnCollision](#06-oncollision)
+- [07-OnTrigger](#07-ontrigger)
+- [08-Raycasting](#08-raycasting)
+- [09-EnvironmentInteraction-FP](#09-environmentinteraction-fp)
+- [10-EnvironmentInteraction-ScreenRay](#10-environmentinteraction-screenray)
 
 ### 06-OnCollision
 
-TBD
+![](imgs/interactions-06-oncollision.gif)
+
 ### 07-OnTrigger
 
-TBD
+![](imgs/interactions-07-ontrigger.gif)
 
 ### 08-Raycasting
 
-TBD
+![](imgs/interactions-08-raycasting.gif)
 
 ### 09-EnvironmentInteraction-FP
 
-TBD
-# Exercise
+![](imgs/interactions-09-fp-01-shrink.gif)
+
+![](imgs/interactions-09-fp-02-push.gif)
+
+![](imgs/interactions-09-fp-03-doors.gif)
+
+![](imgs/interactions-09-fp-04-buttons-transforms.gif)
+
+![](imgs/interactions-09-fp-05-buttons-doors.gif)
+
+### 10-EnvironmentInteraction-ScreenRay
+
+![](imgs/interactions-10-screenray.gif)
+
+## Exercise
 
 The objective of this exercise is to try to reproduce the behaviour of the rotating towers you see in the scene "Assets/\_ClassExercise/ShootingTowers/ShootingTowers.unity"
 
@@ -75,7 +95,7 @@ To check if the target is visible you need to pass the following 3 conditions:
 
 This can be summarized with the picture below:
 
-![](interactions-exercise-03-fov.png)
+![](imgs/interactions-exercise-03-fov.png)
 
 Anything outside the circle (defined by a radius) is invisible to the tower (white object in the center). Only the objects within the angle can be seen. Finally, by using a ray (in the image the green lines) if the first hit IS NOT the target (green line on the left) then there is an obstacle. On the other hand if the hit object is the target (green line on the right), then it means the target is in sight with no obstacles. 
 
@@ -92,7 +112,7 @@ To check if everything is working, you will need to attach the script to the obj
 
 Make sure to also add some big obstacles like walls in the scene where the target can hide. Remember that as you check for their presence using raycasts, these objects need a collider component attached. 
 
-![](interactions-exercise-06-obstacles.png)
+![](imgs/interactions-exercise-06-obstacles.png)
 
 To verify that your tower is shooting, for the moment you can simply use a Debug.Log() function to print on the console that things are working as expected. In the next step we will model the shooting behaviour.
 
@@ -149,4 +169,3 @@ For a complete example refer to the Shoot() function implemented in the Shooting
 Now that you have all the components, compose the scene in order to have multiple shooting towers. The shooting tower you previously created should be a prefab, so simply drag and drop your prefab several times in the scene. Then place (if you have not done so already) the target. As mentioned before, you can use the ShootingTowerTarget prefab available in  "Assets/\_ClassExercise/ShootingTowers/Prefabs". Then place some obstacles wall and see if everything works!
 
 ![](imgs/interactions-exercise-09-final-scene.png)
-
