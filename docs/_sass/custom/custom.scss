@@ -33,8 +33,6 @@ blockquote, blockquote.callout {
   p { margin: 0; }
 }
 
-code { border-radius: 4px; }
-div.highlighter-rouge, pre.highlight { border: 1px solid #2a2d35; border-radius: 8px; }
 
 // Home page topic list as cards
 .main-content > ul { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
@@ -43,4 +41,64 @@ div.highlighter-rouge, pre.highlight { border: 1px solid #2a2d35; border-radius:
   background: #1b1e24;
   border: 1px solid #2a2d35;
   border-radius: 8px;
+}
+
+// Code
+code { border-radius: 4px; }
+:not(pre) > code {
+  padding: 0.15em 0.4em;
+  background: #22262e;
+  border: 1px solid #2f343d;
+  color: #e6edf3;
+}
+
+div.highlighter-rouge {
+  margin: 1.5rem 0;
+  background: #0f1115;
+  border: 1px solid #2a2d35;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+div.highlighter-rouge::before {
+  content: attr(class);
+  display: block;
+  padding: 0.35rem 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b93a1;
+  background: #171a20;
+  border-bottom: 1px solid #2a2d35;
+}
+div.highlighter-rouge.language-csharp::before { content: "C#"; }
+div.highlighter-rouge div.highlight,
+div.highlighter-rouge pre.highlight { margin: 0; background: transparent; border: 0; }
+div.highlighter-rouge pre.highlight {
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+}
+div.highlighter-rouge pre.highlight code {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #d6deeb;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  tab-size: 4;
+}
+
+// Syntax colors (Rouge token classes)
+.highlight {
+  .c, .c1, .cm, .cs { color: #637777; font-style: italic; }
+  .k, .kd, .kn, .kr, .kc, .kp, .ow { color: #c792ea; }
+  .kt, .nc, .nn { color: #ffcb6b; }
+  .nf, .fm { color: #82aaff; }
+  .s, .s1, .s2, .sb, .sc { color: #c3e88d; }
+  .mi, .mf, .mh, .il { color: #f78c6c; }
+  .nb, .bp, .no { color: #7fdbca; }
+  .o, .p { color: #89ddff; }
+  .nv, .vi, .n { color: #d6deeb; }
 }
