@@ -64,15 +64,15 @@ This is achieved through the CubeOfCubesDetonators.cs script (available in \_Phy
 
 The script get a reference to all child Rigidbodies and then when the Spacebar key is pressed it invokes the custom method Detonate:
 
-````csharp
-private void Detonate()  
-{  
-    for (int i = 0; i < _rigidbodies.Length; i++)  
-    {   _rigidbodies[i].isKinematic = false;  
+```csharp
+private void Detonate()
+{
+    for (int i = 0; i < _rigidbodies.Length; i++)
+    {   _rigidbodies[i].isKinematic = false;
         _rigidbodies[i].AddExplosionForce(DetonationForce, transform.position, Radius);
 	}
 }
-````
+```
 
 By cycling through each Rigidbody reference, it sets it to isKinematic = false to ensure that its movement will be driven by the Physics simulation and then applies an explosive force using the method [AddExplosionForce](https://docs.unity3d.com/ScriptReference/Rigidbody.AddExplosionForce.html). The method receives as input: (1) a value for the force to be applied (DetonationForce variable), (2) a position identifying the center of the sphere within which the explosion has its effect (transform.position, i.e., the center of the cube) and (3) the the radius of the sphere within which the explosion has its effect (Radius variable)
 ### 04-Rigidbody-Movement

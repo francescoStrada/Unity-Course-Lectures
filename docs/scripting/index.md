@@ -45,17 +45,17 @@ A further explanation of this concept, and other examples are detailed also in [
 
 This scene shows how to use the [Input](https://docs.unity3d.com/ScriptReference/Input.html) class and specifically the [GetKey()](https://docs.unity3d.com/ScriptReference/Input.GetKey.html) function to detect input from the keyboard and act accordingly. In this action the example is very simple: the color of each cube is randomly assigned, using the [Random](https://docs.unity3d.com/ScriptReference/Random.html) class:
 
-````csharp
+```csharp
 private Color[] _colors = new[] {Color.red, Color.blue, Color.green, Color.magenta, Color.white, Color.cyan, Color.yellow, Color.black};
 
-private void ChangeColor()  
-{  
-    if(_renderer == null)  
-        return;  
-    _renderer.material.color = _colors[Random.Range(0, _colors.Length)];  
+private void ChangeColor()
+{
+    if(_renderer == null)
+        return;
+    _renderer.material.color = _colors[Random.Range(0, _colors.Length)];
 }
 
-``````
+```
 
 ### 04-KeyBoard-Input-Movement
 
