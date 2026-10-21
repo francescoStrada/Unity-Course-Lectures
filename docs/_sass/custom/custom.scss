@@ -1,0 +1,46 @@
+// Accent and surfaces layered on top of the just-the-docs dark scheme
+$accent: #4fd1c5;
+
+body { background-color: #14161a; }
+.side-bar { background-color: #101216; border-right: 1px solid #24272e; }
+.main-content-wrap { max-width: 56rem; }
+
+h1, h2, h3 { letter-spacing: -0.01em; }
+h1 { font-weight: 700; }
+h2 { margin-top: 2.5rem; padding-bottom: 0.4rem; border-bottom: 1px solid #2a2d35; }
+h3 { color: $accent; margin-top: 2rem; }
+
+a { color: $accent; }
+
+// Screenshots and GIFs: framed, never wider than the column
+.main-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border-radius: 10px;
+  border: 1px solid #2a2d35;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+// Notes (blockquote.callout)
+blockquote, blockquote.callout {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.2rem;
+  background: #1b1e24;
+  border-left: 4px solid $accent;
+  border-radius: 0 8px 8px 0;
+  p { margin: 0; }
+}
+
+code { border-radius: 4px; }
+div.highlighter-rouge, pre.highlight { border: 1px solid #2a2d35; border-radius: 8px; }
+
+// Home page topic list as cards
+.main-content > ul { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+.main-content > ul > li {
+  padding: 0.7rem 1rem;
+  background: #1b1e24;
+  border: 1px solid #2a2d35;
+  border-radius: 8px;
+}

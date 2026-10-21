@@ -12,3 +12,5 @@ heading_anchors: true
 aux_links:
   "GitHub repository":
     - https://github.com/francescoStrada/Unity-Course-Lectures
+
+color_scheme: dark
