@@ -1,29 +1,27 @@
 # Unity-Course-Lectures
 
-**DISCLAIMER:
-The repository contents are being uploaded and updated following lectures. Thus, some content may not be available or properly updated.**
+Unity educational material for the Virtual Reality course held @ Politecnico di Torino.
 
+> [!WARNING]
+> **This repository is under heavy maintenance.** The course is receiving a major update throughout this year, so things may break or not work as expected. Apologies for the inconvenience!
+> If you run into a problem, please [open an issue](https://github.com/francescoStrada/Unity-Course-Lectures/issues/new): it lets me know what to fix and it is very much appreciated.
 
-This repository contains the Unity educational material for the Virtual Reality course held @Politecnico di Torino. 
-The unity project, available in /Unity-Course-Lectures/ has been tested with version Unity_2020.3 (LTS).
+## Documentation
 
-## Topics
+Lecture notes and explanations of the project material are available on the course site:
 
-The project and exercise material are structured around several key topics of virtual reality development:
-- 3D Assets Management
-- Scripting
-- Physics
-- Interactions
-- Animations
-- NPCs
-- Lighting & Graphics
-- Audio Management
-- Optimization & Builds
+**https://francescostrada.github.io/Unity-Course-Lectures/**
 
-Please refer to the [wiki documentation](https://github.com/francescoStrada/Unity-Course-Lectures/wiki) to access dedicated pages for each topic, where you will find details of the educational unity material and the explanation of the exercises.
+## The Project
 
+The Unity project is in the [`Unity-Course-Lectures/`](Unity-Course-Lectures) folder. It currently targets **Unity 6000.2**, and an upgrade to **Unity 6.3** is in progress on the `6.3-update` branch.
 
+## Branches
 
-## How to Contribute
-If you find any bug/issue in the project please open an issue on the issue page.
-If you have forked the project and wish to submit some improvements or fixes, please open a pull request.
+- `main`: stable version of the material
+- `develop`: ongoing work
+- `6.3-update`: upgrade of the project to Unity 6.3
+
+## Contributing
+
+Found a bug? Please [open an issue](https://github.com/francescoStrada/Unity-Course-Lectures/issues/new). If you have a fix or an improvement, feel free to fork the repository and open a pull request.
