@@ -25,8 +25,10 @@ public class TargetFollower : MonoBehaviour
 
             //Search Target GameObject with associated class
             //Finding GameObject with associated scripts is the most robust and secure way
-            
-            SimpleTarget simpleTarget = GameObject.FindObjectOfType<SimpleTarget>();
+
+            // Deprecated (as in the videos):
+            // SimpleTarget simpleTarget = GameObject.FindObjectOfType<SimpleTarget>();
+            SimpleTarget simpleTarget = FindAnyObjectByType<SimpleTarget>();
             if (simpleTarget != null)
             {
                 Target = simpleTarget.gameObject;

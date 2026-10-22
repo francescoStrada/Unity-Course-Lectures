@@ -22,7 +22,9 @@ public class ObjectCreator : MonoBehaviour
         // if (Input.GetKeyDown(KeyCode.D))
         if (keyboard.dKey.wasPressedThisFrame)
         {
-            KeyboardInputColorChanger[] objectsToDestroy = GameObject.FindObjectsOfType<KeyboardInputColorChanger>();
+            // Deprecated (as in the videos):
+            // KeyboardInputColorChanger[] objectsToDestroy = GameObject.FindObjectsOfType<KeyboardInputColorChanger>();
+            KeyboardInputColorChanger[] objectsToDestroy = FindObjectsByType<KeyboardInputColorChanger>(FindObjectsSortMode.None);
             for(int i = 0; i < objectsToDestroy.Length; i++)
                 Destroy(objectsToDestroy[i].gameObject);
         }

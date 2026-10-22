@@ -19,7 +19,9 @@ public class CameraIndependentMovement : MonoBehaviour
 
     void Start()
     {
-        _cameraSwitcher = FindObjectOfType<CameraSwitcher>();
+        // Deprecated (as in the videos):
+        // _cameraSwitcher = FindObjectOfType<CameraSwitcher>();
+        _cameraSwitcher = FindAnyObjectByType<CameraSwitcher>();
     }
 
     // Update is called once per frame

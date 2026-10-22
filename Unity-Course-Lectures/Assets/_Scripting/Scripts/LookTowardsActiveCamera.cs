@@ -7,7 +7,9 @@ public class LookTowardsActiveCamera : MonoBehaviour
     private Camera[] _cameras;
     void Start()
     {
-        _cameras = FindObjectsOfType<Camera>();
+        // Deprecated (as in the videos):
+        // _cameras = FindObjectsOfType<Camera>();
+        _cameras = FindObjectsByType<Camera>(FindObjectsSortMode.None);
     }
 
     
