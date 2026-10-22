@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraIndependentMovement : MonoBehaviour
 {
     public float Speed = 5;
     public bool CameraOrientationIndependent = false;
+    public InputActionReference moveAction;
 
     private CameraSwitcher _cameraSwitcher;
+
+    void OnEnable()
+    {
+        // Project-wide actions are shared by every script, so they are enabled here but never disabled
+        moveAction.action.Enable();
+    }
 
     void Start()
     {
@@ -17,8 +25,12 @@ public class CameraIndependentMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        // Legacy Input (as in the videos):
+        // float h = Input.GetAxis("Horizontal");
+        // float v = Input.GetAxis("Vertical");
+        Vector2 move = moveAction.action.ReadValue<Vector2>();
+        float h = move.x;
+        float v = move.y;
         Vector3 direction = new Vector3(h, 0f, v);
         
         if (CameraOrientationIndependent)

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class KeyboardInputColorChanger : MonoBehaviour
 {
@@ -21,14 +22,21 @@ public class KeyboardInputColorChanger : MonoBehaviour
     
     void Update()
     {
-        
-        if(Input.GetKeyDown(KeyCode.Space))
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if(Input.GetKeyDown(KeyCode.Space))
+        if (keyboard.spaceKey.wasPressedThisFrame)
             ChangeColor();
 
-        //if (Input.GetKey(KeyCode.Space))
+        // if (Input.GetKey(KeyCode.Space))
+        //if (keyboard.spaceKey.isPressed)
           //  ChangeColor();
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        // if (Input.GetKeyUp(KeyCode.Space))
+        if (keyboard.spaceKey.wasReleasedThisFrame)
             ChangeColor();
     }
 

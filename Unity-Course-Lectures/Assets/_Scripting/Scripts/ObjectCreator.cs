@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ObjectCreator : MonoBehaviour
 {
@@ -13,14 +14,21 @@ public class ObjectCreator : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if (Input.GetKeyDown(KeyCode.D))
+        if (keyboard.dKey.wasPressedThisFrame)
         {
             KeyboardInputColorChanger[] objectsToDestroy = GameObject.FindObjectsOfType<KeyboardInputColorChanger>();
             for(int i = 0; i < objectsToDestroy.Length; i++)
                 Destroy(objectsToDestroy[i].gameObject);
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        // if (Input.GetKeyDown(KeyCode.S))
+        if (keyboard.sKey.wasPressedThisFrame)
         {
             for (int i = 0; i < ObjectsToSpawn; i++)
             {

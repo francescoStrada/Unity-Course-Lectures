@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Optimization/Scenes/MultiScene/SceneC.unity
     guid: de35dcb42a1ebde4390e62c5f9fc76aa
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c7a67275a1c776a47bfbd69173c17a2d,
+      type: 3}
+  m_UseUCBPForAssetBundles: 0

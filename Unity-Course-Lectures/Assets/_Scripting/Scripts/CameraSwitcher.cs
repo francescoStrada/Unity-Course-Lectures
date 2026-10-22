@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class CameraSwitcher : MonoBehaviour
@@ -30,7 +31,13 @@ public class CameraSwitcher : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if (Input.GetKeyDown(KeyCode.Space))
+        if (keyboard.spaceKey.wasPressedThisFrame)
         {
             //Increment activeCameraIndex, if the index is greater than the Cameras List size we return to index 0
             _activeCameraIndex++;
