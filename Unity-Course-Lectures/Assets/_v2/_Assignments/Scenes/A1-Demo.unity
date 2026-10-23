@@ -809,7 +809,7 @@ MonoBehaviour:
   lookAction: {fileID: -5630151704836100654, guid: c7a67275a1c776a47bfbd69173c17a2d,
     type: 3}
   speed: 5
-  lookSensitivity: 0.1
+  lookSensitivity: 1.5
   gravity: -9.81
   jumpHeight: 1.2
 --- !u!143 &59958198

@@ -9,7 +9,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private InputActionReference lookAction;
 
     [SerializeField] private float speed = 5f;               // metres per second
-    [SerializeField] private float lookSensitivity = 0.1f;   // degrees per pixel of mouse movement
+    [SerializeField] private float lookSensitivity = 1.5f;   // the Look action already scales the mouse by 0.1
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpHeight = 1.2f;        // metres
 
@@ -43,11 +43,12 @@ public class FirstPersonController : MonoBehaviour
     {
         if (Keyboard.current == null) return;
 
-        // Cursor: Esc frees it, a click locks it again
+        // Cursor: Esc frees it and pauses the controls, a click in the Game view locks it again
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
             Cursor.lockState = CursorLockMode.None;
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             Cursor.lockState = CursorLockMode.Locked;
+        if (Cursor.lockState != CursorLockMode.Locked) return;
 
         // Look: x turns the whole body, y tilts only the camera.
         // No Time.deltaTime here: the mouse delta is already "how far it moved this frame".
