@@ -413,8 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6af3bf0dd7dff54f91176faccd76ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseDeltaTime: 1
-  Speed: 3
+  UseDeltaTime: 0
+  Speed: 2
 --- !u!23 &618263635
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UseDeltaTime: 1
-  Speed: 3
+  Speed: 2
 --- !u!23 &1970351862
 MeshRenderer:
   m_ObjectHideFlags: 0
