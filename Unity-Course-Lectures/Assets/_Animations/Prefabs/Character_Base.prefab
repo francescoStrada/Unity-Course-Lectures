@@ -1721,6 +1721,8 @@ MonoBehaviour:
   _cameraT: {fileID: 0}
   _speed: 2
   _rotationSpeed: 20
+  _moveAction: {fileID: -1680190386980627800, guid: c7a67275a1c776a47bfbd69173c17a2d,
+    type: 3}
 --- !u!1 &6831335668367179733
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 using System.Collections;
 
 public class MoveCubeWayPoints : MonoBehaviour
@@ -25,10 +26,17 @@ public class MoveCubeWayPoints : MonoBehaviour
     {
         if (_useCoroutine)
         {
-            if (Input.GetKeyDown(KeyCode.S) && _coroutine == null)
+            Keyboard keyboard = Keyboard.current;
+            if (keyboard == null)
+                return;
+
+            // Legacy Input (as in the videos):
+            // if (Input.GetKeyDown(KeyCode.S) && _coroutine == null)
+            if (keyboard.sKey.wasPressedThisFrame && _coroutine == null)
                 _coroutine = StartCoroutine(MoveAlongWaypointsCoroutine());
-            
-            else if (Input.GetKeyDown(KeyCode.S) && _coroutine != null)
+
+            // else if (Input.GetKeyDown(KeyCode.S) && _coroutine != null)
+            else if (keyboard.sKey.wasPressedThisFrame && _coroutine != null)
             {
                 StopCoroutine(_coroutine);
                 _coroutine = null;

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TreasureChestOpener : MonoBehaviour
 {
@@ -18,9 +18,16 @@ public class TreasureChestOpener : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O))
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if(Input.GetKeyDown(KeyCode.O))
+        if (keyboard.oKey.wasPressedThisFrame)
             Open();
-        if (Input.GetKeyDown(KeyCode.C))
+        // if (Input.GetKeyDown(KeyCode.C))
+        if (keyboard.cKey.wasPressedThisFrame)
             Close();
     }
 
