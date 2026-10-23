@@ -16,7 +16,15 @@ Lecture notes and explanations of the project material are available on the cour
 
 ## The Project
 
-The Unity project is in the [`Unity-Course-Lectures/`](Unity-Course-Lectures) folder. It targets **Unity 6.3** (6000.3.27f1) with the **Universal Render Pipeline (URP)**. The Scripting material (ES03) also uses the new **Input System**; the other topics are being updated in turn.
+The Unity project is in the [`Unity-Course-Lectures/`](Unity-Course-Lectures) folder. It targets **Unity 6.3** (6000.3.27f1) with the **Universal Render Pipeline (URP)**. The Scripting, Interactions and Animations material also uses the new **Input System**; the other topics are being updated in turn.
+
+## Getting Started
+
+1. **Get the project**: clone the repository (`git clone https://github.com/francescoStrada/Unity-Course-Lectures.git`) or download it from **Code > Download ZIP** and extract it.
+2. **Install the editor**: install [Unity Hub](https://docs.unity.com/en-us/hub/install-hub) and, from it, **Unity 6000.3.27f1**. A later Unity 6.3 version works as well.
+3. **Add the project to the Hub**: in **Projects**, click **Add > Add project from disk** and select the inner `Unity-Course-Lectures` folder, the one containing `Assets`, `Packages` and `ProjectSettings` (not the repository root). If the required editor version is missing, the Hub offers to install it.
+4. **Open it**: the first opening takes a few minutes, while Unity imports all the assets.
+5. **Play a scene**: the scenes of each topic are in `Assets/_<Topic>/Scenes` (for example `Assets/_Scripting/Scenes`). Open one, press **Play** and click inside the **Game** view before using the keyboard and the mouse.
 
 ## Branches
 
