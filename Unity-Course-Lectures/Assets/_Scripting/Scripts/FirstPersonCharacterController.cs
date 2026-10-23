@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FirstPersonCharacterController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class FirstPersonCharacterController : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _jumpHeight = 3f;
 
+    [SerializeField] private InputActionReference _moveAction;
+    [SerializeField] private InputActionReference _lookAction;
 
     private CharacterController _characterController;
     private float cameraXRotation = 0f;
@@ -27,9 +30,19 @@ public class FirstPersonCharacterController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    void OnEnable()
+    {
+        // Project-wide actions are shared by every script, so they are enabled here but never disabled
+        _moveAction.action.Enable();
+        _lookAction.action.Enable();
+    }
 
     void Update()
     {
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null || Mouse.current == null)
+            return;
+
         UpdateCursor();
 
         if(Cursor.lockState == CursorLockMode.None)
@@ -43,8 +56,12 @@ public class FirstPersonCharacterController : MonoBehaviour
             _velocity.y = -2f;
         }
 
-        float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * _mouseSensitivity * Time.deltaTime;
+        // Legacy Input (as in the videos):
+        // float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity * Time.deltaTime;
+        // float mouseY = Input.GetAxis("Mouse Y") * _mouseSensitivity * Time.deltaTime;
+        Vector2 look = _lookAction.action.ReadValue<Vector2>();
+        float mouseX = look.x * _mouseSensitivity * Time.deltaTime;
+        float mouseY = look.y * _mouseSensitivity * Time.deltaTime;
 
         //Compute direction According to Camera Orientation
         transform.Rotate(Vector3.up, mouseX);
@@ -53,13 +70,18 @@ public class FirstPersonCharacterController : MonoBehaviour
         _cameraT.localRotation = Quaternion.Euler(cameraXRotation, 0f, 0f);
 
 
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        // Legacy Input (as in the videos):
+        // float h = Input.GetAxis("Horizontal");
+        // float v = Input.GetAxis("Vertical");
+        Vector2 moveInput = _moveAction.action.ReadValue<Vector2>();
+        float h = moveInput.x;
+        float v = moveInput.y;
         Vector3 move = (transform.right * h + transform.forward * v).normalized;
         _characterController.Move(move * _speed * Time.deltaTime);
 
         //JUMPING
-        if (Input.GetKey(KeyCode.Space) && _isGrounded)
+        // if (Input.GetKey(KeyCode.Space) && _isGrounded)
+        if (keyboard.spaceKey.isPressed && _isGrounded)
         {
             _velocity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
         }
@@ -71,10 +93,13 @@ public class FirstPersonCharacterController : MonoBehaviour
 
     private void UpdateCursor()
     {
-        if (Cursor.lockState == CursorLockMode.None && Input.GetMouseButtonDown(1))
+        // Legacy Input (as in the videos):
+        // if (Cursor.lockState == CursorLockMode.None && Input.GetMouseButtonDown(1))
+        if (Cursor.lockState == CursorLockMode.None && Mouse.current.rightButton.wasPressedThisFrame)
             Cursor.lockState = CursorLockMode.Locked;
 
-        if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.Escape))
+        // if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.Escape))
+        if (Cursor.lockState == CursorLockMode.Locked && Keyboard.current.escapeKey.wasPressedThisFrame)
             Cursor.lockState = CursorLockMode.None;
     }
 }

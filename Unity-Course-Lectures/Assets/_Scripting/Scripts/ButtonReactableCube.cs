@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class ButtonReactableCube : MonoBehaviour
@@ -32,7 +33,13 @@ public class ButtonReactableCube : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if(Input.GetKeyDown(KeyCode.R))
+        if (keyboard.rKey.wasPressedThisFrame)
         {
             transform.position = initialPos;
             transform.localScale = initialScale;

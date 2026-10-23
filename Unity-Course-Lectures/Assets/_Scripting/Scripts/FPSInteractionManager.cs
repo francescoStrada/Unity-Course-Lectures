@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -26,12 +27,17 @@ public class FPSInteractionManager : MonoBehaviour
 
     void Update()
     {
+        if (Mouse.current == null)
+            return;
+
         _rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
 
         if(_grabbedObject == null)
             CheckInteraction();
 
-        if (_grabbedObject != null && Input.GetMouseButtonDown(0))
+        // Legacy Input (as in the videos):
+        // if (_grabbedObject != null && Input.GetMouseButtonDown(0))
+        if (_grabbedObject != null && Mouse.current.leftButton.wasPressedThisFrame)
             Drop();
 
         UpdateUITarget();
@@ -50,8 +56,10 @@ public class FPSInteractionManager : MonoBehaviour
             //Check if is interactable
             _pointingInteractable = hit.transform.GetComponent<Interactable>();
             if (_pointingInteractable)
-            { 
-                if(Input.GetMouseButtonDown(0))
+            {
+                // Legacy Input (as in the videos):
+                // if(Input.GetMouseButtonDown(0))
+                if (Mouse.current.leftButton.wasPressedThisFrame)
                     _pointingInteractable.Interact(gameObject);
             }
 
@@ -59,7 +67,9 @@ public class FPSInteractionManager : MonoBehaviour
             _pointingGrabbable = hit.transform.GetComponent<Grabbable>();
             if (_grabbedObject == null && _pointingGrabbable)
             {
-                if (Input.GetMouseButtonDown(1))
+                // Legacy Input (as in the videos):
+                // if (Input.GetMouseButtonDown(1))
+                if (Mouse.current.rightButton.wasPressedThisFrame)
                 {
                     _pointingGrabbable.Grab(gameObject);
                     Grab(_pointingGrabbable);

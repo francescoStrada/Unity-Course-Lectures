@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System.Collections;
 
 public class ScreenRayCaster : MonoBehaviour
@@ -14,10 +15,16 @@ public class ScreenRayCaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetMouseButtonDown(1))
+        Mouse mouse = Mouse.current;
+        if (mouse == null)
+            return;
+
+        // Legacy Input (as in the videos):
+        // if (Input.GetMouseButtonDown(1))
+        if (mouse.rightButton.wasPressedThisFrame)
         {
-            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+            // Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = _camera.ScreenPointToRay(mouse.position.ReadValue());
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
