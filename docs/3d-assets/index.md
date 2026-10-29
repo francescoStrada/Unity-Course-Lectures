@@ -17,12 +17,13 @@ The Blender files used in the videos are in the [`Blender/`](https://github.com/
 
 - `VR_ES02_3DAssets.blend`: the main Blender file, with the objects shown in the videos.
 - `exports/`: the FBX files exported from Blender, which are the ones imported in Unity (`handles_batch/` contains a set of objects exported in one go).
+- `external_blender_files/`: third-party Blender files, such as the buildings kit mentioned below.
 - `textures/`: the PBR texture sets used by the materials (base color, normal, roughness/metalness, ambient occlusion, displacement).
 
 Keep the folder structure unchanged when opening the `.blend` file, since the textures are referenced with relative paths.
 
 <blockquote class="callout callout_default" theme="">
-<p>The <b>buildings kit</b> used in the videos is a third-party Blender asset pack downloaded from the internet, and its original source is unknown. For this reason, and because of its size, it is <b>not included</b> in the repository. It is not needed to run any of the Unity scenes.</p> </blockquote>
+<p>The <b>buildings kit</b> used in the videos (<code>external_blender_files/buildings_kit_10.blend</code>, 78 MB) is a third-party Blender asset pack downloaded from the internet, and its original source was not recorded. It is included for convenience and is not needed to run any of the Unity scenes. It is kept <b>read-only</b>: if you want to modify it, work on a copy outside the repository.</p> </blockquote>
 
 ## Project Material
 
