@@ -41,3 +41,6 @@ sysinfo.txt
 
 # Local working notes (not committed)
 /tmp/
+
+# Blender backup files
+*.blend1
