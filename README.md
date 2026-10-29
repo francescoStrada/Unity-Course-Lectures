@@ -18,6 +18,8 @@ Lecture notes and explanations of the project material are available on the cour
 
 The Unity project is in the [`Unity-Course-Lectures/`](Unity-Course-Lectures) folder. It targets **Unity 6.3** (6000.3.27f1) with the **Universal Render Pipeline (URP)**. The Scripting, Interactions and Animations material also uses the new **Input System**; the other topics are being updated in turn.
 
+The Blender files used in the 3D Assets lecture are in the [`Blender/`](Blender) folder, next to the Unity project. They are not needed to run the project, and the third-party buildings kit (downloaded from the internet, source unknown) is not included (see the [3D Assets page](https://francescostrada.github.io/Unity-Course-Lectures/3d-assets/)).
+
 ## Getting Started
 
 1. **Get the project**: clone the repository (`git clone https://github.com/francescoStrada/Unity-Course-Lectures.git`) or download it from **Code > Download ZIP** and extract it.
