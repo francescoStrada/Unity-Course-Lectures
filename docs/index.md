@@ -16,5 +16,5 @@ The project material is structured around several key topics of virtual reality 
 - [ES06 - Interactions](interactions/)
 - [Animations](animations/)
 - [NPCs - TBD]()
-- [Lighting & Graphics - TBD]()
+- [Rendering, Lighting & VFX](rendering-lighting-vfx/)
 - [Optimization & Builds - TBD]()
