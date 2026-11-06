@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Optimization/Scenes/MultiScene/SceneC.unity
     guid: de35dcb42a1ebde4390e62c5f9fc76aa
+  - enabled: 1
+    path: Assets/_v2/_Assignments/assignment-2/Scenes/A2-Environment.unity
+    guid: d0fd19e92d7990e4aa5e27344026be02
+  - enabled: 1
+    path: Assets/_v2/_Assignments/assignment-2/Scenes/A2-Lighting.unity
+    guid: e8edc9ca89bc4914694670ba00183712
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c7a67275a1c776a47bfbd69173c17a2d,
       type: 3}
