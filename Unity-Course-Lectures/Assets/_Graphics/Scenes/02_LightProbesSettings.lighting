@@ -54,8 +54,8 @@ LightingSettings:
   m_PVRMinBounces: 4
   m_PVREnvironmentImportanceSampling: 0
   m_PVRFilteringMode: 2
-  m_PVRDenoiserTypeDirect: 0
-  m_PVRDenoiserTypeIndirect: 0
+  m_PVRDenoiserTypeDirect: 2
+  m_PVRDenoiserTypeIndirect: 2
   m_PVRDenoiserTypeAO: 0
   m_PVRFilterTypeDirect: 0
   m_PVRFilterTypeIndirect: 0

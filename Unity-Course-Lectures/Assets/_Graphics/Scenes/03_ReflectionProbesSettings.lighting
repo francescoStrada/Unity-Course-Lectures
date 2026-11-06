@@ -19,7 +19,7 @@ LightingSettings:
   m_LightmapMaxSize: 2048
   m_LightmapSizeFixed: 0
   m_UseMipmapLimits: 1
-  m_BakeResolution: 25
+  m_BakeResolution: 40
   m_Padding: 5
   m_LightmapCompression: 0
   m_LightmapPackingMode: 1
@@ -54,8 +54,8 @@ LightingSettings:
   m_PVRMinBounces: 4
   m_PVREnvironmentImportanceSampling: 0
   m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 0
-  m_PVRDenoiserTypeIndirect: 0
+  m_PVRDenoiserTypeDirect: 2
+  m_PVRDenoiserTypeIndirect: 2
   m_PVRDenoiserTypeAO: 0
   m_PVRFilterTypeDirect: 0
   m_PVRFilterTypeIndirect: 0
