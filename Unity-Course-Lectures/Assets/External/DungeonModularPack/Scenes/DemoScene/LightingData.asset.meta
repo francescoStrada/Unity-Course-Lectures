@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aff0f325697d91f438531c6f68689e7e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Scenes/DemoScene/LightingData.asset
+  uploadId: 694981

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a3d9880a21ecb347a3ba5e4bab98af4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Materials/M_Torch.mat
+  uploadId: 694981

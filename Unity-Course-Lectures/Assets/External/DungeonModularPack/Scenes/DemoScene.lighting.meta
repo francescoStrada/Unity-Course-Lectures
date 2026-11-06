@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13ce7981403bc0340aa555f602ebdeab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Scenes/DemoScene.lighting
+  uploadId: 694981

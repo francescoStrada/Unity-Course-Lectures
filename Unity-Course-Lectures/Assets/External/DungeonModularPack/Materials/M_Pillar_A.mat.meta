@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bbad3fe44a0b0274aa3f9a13236504e4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Materials/M_Pillar_A.mat
+  uploadId: 694981

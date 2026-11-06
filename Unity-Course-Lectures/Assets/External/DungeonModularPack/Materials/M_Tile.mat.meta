@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6fea00e2bb949774490a2196bed36fe5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Materials/M_Tile.mat
+  uploadId: 694981

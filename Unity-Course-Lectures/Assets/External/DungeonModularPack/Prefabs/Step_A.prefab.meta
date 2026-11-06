@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 388d9b17ab21db24abe453cf6da856ae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Prefabs/Step_A.prefab
+  uploadId: 694981

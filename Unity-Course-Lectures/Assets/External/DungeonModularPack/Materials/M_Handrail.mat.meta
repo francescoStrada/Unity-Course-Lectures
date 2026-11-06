@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eedc838e0dbb23346b00410c657277ee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295430
+  packageName: Dungeon Modular Pack
+  packageVersion: 1.0
+  assetPath: Assets/DungeonModularPack/Materials/M_Handrail.mat
+  uploadId: 694981
